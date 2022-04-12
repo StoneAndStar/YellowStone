@@ -44,7 +44,7 @@
 		to_chat(owner, SPAN_DANGER("You go blind!"))
 
 /obj/item/organ/internal/eyes/proc/get_colourmatrix() //Returns a special colour matrix if the mob is colourblind, otherwise it uses the current one.
-	if(owner.stats.getPerk(PERK_OBORIN_SYNDROME) && !owner.is_dead())
+	if(owner.stats.getPerk(PERK_SICKLY_UPBRINGING) && !owner.is_dead())
 		return colourblind_matrix
 	else
 		return colourmatrix

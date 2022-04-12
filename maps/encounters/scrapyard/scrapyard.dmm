@@ -4118,7 +4118,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/outpost/junkyard/ship/epstein)
 "GU" = (
-/obj/structure/bed/chair/wood/wings{
+/obj/structure/bed/chair/custom/wood{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -5379,7 +5379,7 @@
 /turf/simulated/floor/tiled,
 /area/outpost/junkyard/station/charlie)
 "RS" = (
-/obj/structure/bed/chair/office/light,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/outpost/junkyard/hermitage)
 "RT" = (

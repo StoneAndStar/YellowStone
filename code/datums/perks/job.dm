@@ -40,6 +40,9 @@
 	holder.sanity.insight_rest_gain_multiplier += old_insight_rest_gain_multiplier
 	..()
 
+/datum/perk/advanced_medical
+	name = "Advanced Surgical Techniques"
+	desc = "Your surgical training and experience have tempered your special techniques for treating patients, enabling you to make more effective and efficient use of your resources when reconstituting their bodies."
 
 /datum/perk/selfmedicated
 	name = "Self-medicated"
@@ -76,7 +79,6 @@
 		holder.metabolism_effects.nsa_threshold_base /= 1.25
 	..()
 
-
 /datum/perk/vagabond
 	name = "Vagabond"
 	desc = "You're used to see the worst sight the world has to offer. Your mind feels more resistant. \
@@ -93,89 +95,19 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
-/datum/perk/merchant
-	name = "Merchant"
-	desc = "Money is what matters for you, and it's so powerful it lets you improve your skills. \
-			This perk lets you use money for leveling up. The credits need to be in your backpack."
-	icon_state = "merchant" // https://game-icons.net/1x1/lorc/cash.html and https://game-icons.net/1x1/delapouite/graduate-cap.html slapped on https://game-icons.net/1x1/lorc/trade.html
-
-/datum/perk/merchant/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.sanity.valid_inspirations += /obj/item/spacecash/bundle
-
-/datum/perk/merchant/remove()
-	if(holder)
-		holder.sanity.valid_inspirations -= /obj/item/spacecash/bundle
-	..()
-
-#define CHOICE_LANG "language" // Random language chosen from a pool
-#define CHOICE_TCONTRACT "tcontract" // Traitor contract
-#define CHOICE_STASHPAPER "stashpaper" //stash location paper
-#define CHOICE_RAREOBJ "rareobj" // Rare loot object
-
-// ALERT: This perk has no removal method. Mostly because 3 out of 4 choices give knowledge to the player in the form of text, that would be pointless to remove.
-/datum/perk/deep_connection
-	name = "Deep connection"
-	desc = "With the help of your numerous trustworthy contacts, you manage to collect some useful information. \
-			Provides you with 1 of 4 boons: Language, Traitor Contract, a stash location or a special item in a box."
-	icon_state = "deepconnection" // https://game-icons.net/1x1/quoting/card-pickup.html
-
-/datum/perk/deep_connection/assign(mob/living/carbon/human/H)
-	..()
-	if(!holder)
-		return
-	var/list/choices = list(CHOICE_RAREOBJ)
-	if(GLOB.various_antag_contracts.len)
-		choices += CHOICE_TCONTRACT
-	var/datum/stash/stash = pick_n_take_stash_datum()
-	if(stash)
-		stash.select_location()
-		if(stash.stash_location)
-			choices += CHOICE_STASHPAPER
-	// Let's see if an additional language is feasible. If the user has them all already somehow, we aren't gonna choose this.
-	var/list/valid_languages = list(LANGUAGE_CYRILLIC, LANGUAGE_SERBIAN, LANGUAGE_GERMAN, LANGUAGE_NEOHONGO, LANGUAGE_LATIN) // Not static, because we're gonna remove languages already known by the user
-	for(var/l in valid_languages)
-		var/datum/language/L = all_languages[l]
-		if(L in holder.languages)
-			valid_languages -= l
-	if(valid_languages.len)
-		choices += CHOICE_LANG
-	// Let's pick a random choice
-	switch(pick(choices))
-		if(CHOICE_LANG)
-			var/language = pick(valid_languages)
-			holder.add_language(language)
-			desc += " In particular, you happen to know [language]."
-		if(CHOICE_TCONTRACT)
-			var/datum/antag_contract/A = pick(GLOB.various_antag_contracts)
-			desc += " You feel like you remembered something important."
-			holder.mind.store_memory("Thanks to your connections, you were tipped off about some suspicious individuals on the ship. In particular, you were told that they have a contract: " + A.name + ": " + A.desc)
-		if(CHOICE_STASHPAPER)
-			desc += " You have a special note in your storage."
-			stash.spawn_stash()
-			var/obj/item/paper/stash_note = stash.spawn_note()
-			holder.equip_to_storage_or_drop(stash_note)
-		if(CHOICE_RAREOBJ)
-			desc += " You managed to smuggle a rare item aboard."
-			var/obj/O = pickweight(RANDOM_RARE_ITEM - /obj/item/stash_spawner)
-			var/obj/item/storage/box/B = new
-			new O(B) // Spawn the random spawner in the box, so that the resulting random item will be within the box
-			holder.equip_to_storage_or_drop(B)
-
-#undef CHOICE_LANG
-#undef CHOICE_TCONTRACT
-#undef CHOICE_STASHPAPER
-#undef CHOICE_RAREOBJ
+/datum/perk/market_prof
+	name = "Market Professional"
+	desc = "Just by looking at the item you can know how much it cost."
+	icon_state = "market_prof"
 
 /datum/perk/sanityboost
-	name = "True Faith"
-	desc = "When near an obelisk, you feel your mind at ease. Your sanity regeneration is boosted."
-	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
+	name = "Cult of Mars"
+	desc = "When near a banner, you feel your mind at ease. Your sanity regeneration is boosted."
+	icon_state = "legion" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost
-	name = "True Faith (Active)"
-	icon_state = "sanityboost" // https://game-icons.net/1x1/lorc/templar-eye.html
+	name = "Cult of Mars (Active)"
+	icon_state = "legion" // https://game-icons.net/1x1/lorc/templar-eye.html
 
 /datum/perk/active_sanityboost/assign(mob/living/carbon/human/H)
 	..()
@@ -195,7 +127,7 @@
 
 /datum/perk/active_inspiration
 	name = "Exotic Inspiration (Active)"
-	icon_state = "inspiration_active" // https://game-icons.net/1x1/lorc/enlightenment.html
+	icon_state = "drinking" // https://game-icons.net/1x1/lorc/enlightenment.html
 
 /datum/perk/active_inspiration/assign(mob/living/carbon/human/H)
 	..()
@@ -214,6 +146,153 @@
 	desc = "You know how to handle even strongest alcohol in the universe."
 	icon_state = "celebration" // https://game-icons.net/1x1/delapouite/glass-celebration.html
 
+/datum/perk/greenthumb
+	name = "Green Thumb"
+	desc = "After growing plants for years you have become a botanical expert. You can get all information about plants, from stats \
+	        to harvest reagents, by examining them. Gathering plants relaxes you and thus restores sanity."
+	icon_state = "greenthumb" // https://game-icons.net/1x1/delapouite/farmer.html
+
+	var/obj/item/device/scanner/plant/virtual_scanner = new
+
+/datum/perk/greenthumb/assign(mob/living/carbon/human/H)
+	..()
+	virtual_scanner.is_virtual = TRUE
+
+/datum/perk/job/rally
+	name = "Rallying the Troops"
+	desc = "Your presence instills confidence, order and, most importantly, sanity to your underlings. People near you recover sanity."
+	icon_state = "rally"
+
+/datum/perk/job/rally/assign(mob/living/carbon/human/H)
+	..()
+	if(holder)
+		holder.sanity_damage -= 2
+
+/datum/perk/job/rally/remove()
+	if(holder)
+		holder.sanity_damage += 2
+	..()
+
+/datum/perk/bolttraining
+	name = "Bolt Action Rifle Training"
+	desc = "You likely grew up either on the frontiers of civilization hunting food for survive, rustling brahmin from barons for a living or dealing with sub-par weaponry all your life. \
+			But hey, you've learned how to keep the bolt on your rifle greased, fire fast and fire accurately. Who said bolt-actions are the way of the past!?"
+	icon_state = "bolt_action"
+
+/datum/perk/rezsickness
+	name = "Revival Sickness"
+	desc = "You've recently died and have been brought back to life, the experience leaving you weakened and thus unfit for fighting for a while. You better find a bed or chair to rest into until you've fully recuperated."
+	gain_text = "Your body aches from the pain of returning from death, you better find a chair or bed to rest in so you can heal properly."
+	lose_text = "You finally feel like you recovered from the ravages of your body."
+	var/initial_time
+
+/datum/perk/rezsickness/activate()
+	var/mob/living/carbon/human/user = usr
+	if(!istype(user))
+		return ..()
+	if(world.time < cooldown_time)
+		to_chat(usr, SPAN_NOTICE("Your chemical injector is still refilling, you'll need to wait longer."))
+		return FALSE
+	cooldown_time = world.time + 15 MINUTES
+	user.visible_message("[user] begins twitching and breathing much quicker!", "You feel your heart rate increasing rapidly as everything seems to speed up!", "You hear someone breathing rapidly...")
+	log_and_message_admins("used their [src] perk.")
+	user.reagents.add_reagent("hyperzine", 5)
+	return ..()
+
+/datum/perk/rezsickness/assign(mob/living/carbon/human/H)
+	..()
+	initial_time = world.time
+	cooldown_time = world.time + 30 MINUTES
+	holder.brute_mod_perk += 0.10
+	holder.burn_mod_perk += 0.10
+	holder.oxy_mod_perk += 0.10
+	holder.toxin_mod_perk += 0.10
+	holder.stats.changeStat(STAT_ROB, -10)
+	holder.stats.changeStat(STAT_TGH, -10)
+	holder.stats.changeStat(STAT_VIG, -10)
+
+/datum/perk/rezsickness/remove()
+	holder.brute_mod_perk -= 0.10
+	holder.burn_mod_perk -= 0.10
+	holder.oxy_mod_perk -= 0.10
+	holder.toxin_mod_perk -= 0.10
+	holder.stats.changeStat(STAT_ROB, 10)
+	holder.stats.changeStat(STAT_TGH, 10)
+	holder.stats.changeStat(STAT_VIG, 10)
+	..()
+
+/datum/perk/rezsickness/severe
+	name = "Severe Revival Sickness"
+	desc = "You've recently died and have been brought back to life. Your body cannot handle this traumatic experience very well, to the point where you struggle to complete even basic tasks. You better rest in a bed until it subsides before going back to work."
+
+/datum/perk/rezsickness/severe/assign(mob/living/carbon/human/H)
+	..()
+	holder.brute_mod_perk += 0.15
+	holder.burn_mod_perk += 0.15
+	holder.oxy_mod_perk += 0.15
+	holder.toxin_mod_perk += 0.15
+	holder.stats.changeStat(STAT_COG, -15)
+	holder.stats.changeStat(STAT_MEC, -15)
+	holder.stats.changeStat(STAT_BIO, -15)
+
+/datum/perk/rezsickness/severe/remove()
+	holder.brute_mod_perk -= 0.15
+	holder.burn_mod_perk -= 0.15
+	holder.oxy_mod_perk -= 0.15
+	holder.toxin_mod_perk -= 0.15
+	holder.stats.changeStat(STAT_COG, 15)
+	holder.stats.changeStat(STAT_MEC, 15)
+	holder.stats.changeStat(STAT_BIO, 15)
+	..()
+
+/datum/perk/rezsickness/severe/fatal
+	name = "Fatal Revival Sickness"
+	desc = "You've recently died and have been brought back to life. Your frail constitution can barely handle the process, leaving you utterly physically and mentally wrecked. You better stay in bed for now and rest, or you risk dying even easier than before."
+
+/datum/perk/rezsickness/severe/fatal/assign(mob/living/carbon/human/H)
+	..()
+	holder.brute_mod_perk += 0.25
+	holder.burn_mod_perk += 0.25
+	holder.oxy_mod_perk += 0.25
+	holder.toxin_mod_perk += 0.25
+	holder.stats.changeStat(STAT_ROB, -20)
+	holder.stats.changeStat(STAT_TGH, -20)
+	holder.stats.changeStat(STAT_VIG, -20)
+	holder.stats.changeStat(STAT_COG, -20)
+	holder.stats.changeStat(STAT_MEC, -20)
+	holder.stats.changeStat(STAT_BIO, -20)
+
+/datum/perk/rezsickness/severe/fatal/remove()
+	holder.brute_mod_perk -= 0.25
+	holder.burn_mod_perk -= 0.25
+	holder.oxy_mod_perk -= 0.25
+	holder.toxin_mod_perk -= 0.25
+	holder.stats.changeStat(STAT_ROB, 20)
+	holder.stats.changeStat(STAT_TGH, 20)
+	holder.stats.changeStat(STAT_VIG, 20)
+	holder.stats.changeStat(STAT_COG, 20)
+	holder.stats.changeStat(STAT_MEC, 20)
+	holder.stats.changeStat(STAT_BIO, 20)
+	..()
+
+/datum/perk/rezsickness/on_process()
+	if(cooldown_time <= world.time)
+		holder.stats.removePerk(type)
+		to_chat(holder, SPAN_NOTICE("[lose_text]"))
+		return
+	if(holder.buckled)
+		cooldown_time -= 2 SECONDS
+
+
+//Da Graveyard
+//Basically stuff that should be either used at some point or removed. Not my focus to do so, so I'm leaving it here. - Rebel0
+
+/datum/perk/channeling
+	name = "Channeling"
+	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
+			during group rituals and have an increased regeneration of cruciform energy."
+	icon_state = "channeling"
+
 /datum/perk/neat
 	name = "Neat"
 	desc = "You're used to see blood and filth in all its forms. Your motto: a clean ship is the first step to enlightenment. \
@@ -231,38 +310,21 @@
 		holder.sanity.view_damage_threshold -= 20
 	..()
 
-/datum/perk/greenthumb
-	name = "Green Thumb"
-	desc = "After growing plants for years you have become a botanical expert. You can get all information about plants, from stats \
-	        to harvest reagents, by examining them. Gathering plants relaxes you and thus restores sanity."
-	icon_state = "greenthumb" // https://game-icons.net/1x1/delapouite/farmer.html
+/datum/perk/merchant
+	name = "Merchant"
+	desc = "Money is what matters for you, and it's so powerful it lets you improve your skills. \
+			This perk lets you use money for leveling up. The credits need to be in your backpack."
+	icon_state = "merchant" // https://game-icons.net/1x1/lorc/cash.html and https://game-icons.net/1x1/delapouite/graduate-cap.html slapped on https://game-icons.net/1x1/lorc/trade.html
 
-	var/obj/item/device/scanner/plant/virtual_scanner = new
-
-/datum/perk/greenthumb/assign(mob/living/carbon/human/H)
-	..()
-	virtual_scanner.is_virtual = TRUE
-
-/datum/perk/job/club
-	name = "Raising the bar"
-	desc = "You know how to mix drinks and change lives. People near you recover sanity."
-	icon_state = "inspiration"
-
-/datum/perk/job/club/assign(mob/living/carbon/human/H)
+/datum/perk/merchant/assign(mob/living/carbon/human/H)
 	..()
 	if(holder)
-		holder.sanity_damage -= 2
+		holder.sanity.valid_inspirations += /obj/item/spacecash/bundle
 
-/datum/perk/job/club/remove()
+/datum/perk/merchant/remove()
 	if(holder)
-		holder.sanity_damage += 2
+		holder.sanity.valid_inspirations -= /obj/item/spacecash/bundle
 	..()
-
-/datum/perk/channeling
-	name = "Channeling"
-	desc = "You know how to channel spiritual energy during rituals. You gain additional skill points \
-			during group rituals and have an increased regeneration of cruciform energy."
-	icon_state = "channeling"
 
 /datum/perk/codespeak
 	name = "Codespeak"
@@ -316,3 +378,4 @@
 	if(holder)
 		holder.verbs -= codespeak_procs
 	..()
+

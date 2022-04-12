@@ -2,7 +2,7 @@
 
 /obj/machinery/atmospherics/unary/cryo_cell
 	name = "cryo cell"
-	icon = 'icons/obj/cryogenics.dmi' // map only
+	icon = 'icons/obj/medical/cryogenics.dmi' // map only
 	icon_state = "pod_preview"
 	density = TRUE
 	anchored = TRUE
@@ -23,7 +23,7 @@
 
 /obj/machinery/atmospherics/unary/cryo_cell/New()
 	..()
-	icon = 'icons/obj/cryogenics_split.dmi'
+	icon = 'icons/obj/medical/cryogenics_split.dmi'
 	update_icon()
 	initialize_directions = dir
 

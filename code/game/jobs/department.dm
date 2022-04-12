@@ -129,3 +129,30 @@
 	name = "Offship entities"
 	id = DEPARTMENT_OFFSHIP
 	account_budget = 0
+
+/********************
+	Fallout
+********************/
+/datum/department/bos
+	name = "Brotherhood of Steel"
+	id = DEPARTMENT_BOS
+
+/datum/department/ncr
+	name = "New California Republic"
+	id = DEPARTMENT_NCR
+
+/datum/department/leg
+	name = "Caesar's Legion"
+	id = DEPARTMENT_LEGION
+
+/datum/department/khan
+	name = "Eighties"
+	id = DEPARTMENT_KHAN
+
+/datum/department/town
+	name = "Vault-Tek City Coalition"
+	id = DEPARTMENT_TOWN
+
+/datum/department/wasteland
+	name = "Wasteland"
+	id = DEPARTMENT_WASTELAND

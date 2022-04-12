@@ -144,7 +144,7 @@
 /turf/simulated/floor/tiled/derelict/airless,
 /area/template_noop)
 "ee" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 4
 	},
 /turf/simulated/floor/dirt/airless,
@@ -300,7 +300,7 @@
 /turf/simulated/floor/plating/under/airless,
 /area/template_noop)
 "CY" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/dirt/airless,
@@ -325,7 +325,7 @@
 /turf/simulated/floor/dirt/airless,
 /area/template_noop)
 "DU" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/dark/brown_platform/airless,
 /area/template_noop)
 "DW" = (
@@ -336,7 +336,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
 /area/template_noop)
 "ES" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/dark/brown_platform/airless,

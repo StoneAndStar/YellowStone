@@ -97,7 +97,7 @@
 	icon_state = "pickle"
 	icon_living = "pickle"
 	icon_dead = "pickle"
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	pass_flags = PASSGLASS
 	density = FALSE
 	maxHealth = 500

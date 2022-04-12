@@ -160,7 +160,7 @@
 				R.fire_sound = 'sound/weapons/guns/fire/shotgunp_fire.ogg'
 
 			if("rifle")
-				R.caliber = pick(CAL_CLRIFLE, CAL_SRIFLE, CAL_LRIFLE)
+				R.caliber = pick(CAL_22, CAL_SRIFLE, CAL_LRIFLE)
 				R.fire_sound = 'sound/weapons/guns/fire/smg_fire.ogg'
 
 			//No gun currently uses CAL_357 far as I know

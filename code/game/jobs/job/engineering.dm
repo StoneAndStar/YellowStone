@@ -1,3 +1,4 @@
+/*
 /datum/job/chief_engineer
 	title = "Technomancer Exultant"
 	flag = EXULTANT
@@ -123,3 +124,4 @@ Eris is your home, your life, and your livelihood. Take pride in it, and in your
 	name = "Technomancer"
 	icon_state = "player-orange"
 	join_tag = /datum/job/technomancer
+*/

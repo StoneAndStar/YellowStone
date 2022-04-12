@@ -61,16 +61,11 @@
 		/datum/design/autolathe/ammo/magnum_ammobox,
 		/datum/design/autolathe/ammo/magnum_ammobox/rubber,
 		/datum/design/autolathe/ammo/srifle,						//vintorez ammo
-		/datum/design/autolathe/ammo/srifle/rubber,
 		/datum/design/autolathe/ammo/srifle_ammobox,
-		/datum/design/autolathe/ammo/srifle_ammobox/rubber,
 		/datum/design/autolathe/ammo/sl_lrifle,						//boltgun ammo
 		/datum/design/autolathe/ammo/lrifle_ammobox_small,
-		/datum/design/autolathe/ammo/lrifle_ammobox_small/rubber,
 		/datum/design/autolathe/ammo/lrifle,						//AK ammo
-		/datum/design/autolathe/ammo/lrifle/rubber,
 		/datum/design/autolathe/ammo/maxim,							//Maxim ammo
-		/datum/design/autolathe/ammo/maxim/rubber,
 		/datum/design/autolathe/ammo/lrifle_ammobox,
 		/datum/design/autolathe/sec/silencer,						//misc
 		/datum/design/autolathe/clothing/excelsior_armor,
@@ -106,8 +101,7 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/ak47,
-		/datum/design/autolathe/ammo/lrifle,						//AK ammo
-		/datum/design/autolathe/ammo/lrifle/rubber
+		/datum/design/autolathe/ammo/lrifle						//AK ammo
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/excelsior/vintorez
@@ -122,8 +116,7 @@
 	license = -1
 	designs = list(
 		/datum/design/autolathe/gun/vintorez,
-		/datum/design/autolathe/ammo/srifle,						//vintorez ammo
-		/datum/design/autolathe/ammo/srifle/rubber
+		/datum/design/autolathe/ammo/srifle						//vintorez ammo
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/excelsior/boltgun
@@ -139,8 +132,7 @@
 	designs = list(
 		/datum/design/autolathe/gun/boltgun,
 		/datum/design/autolathe/ammo/sl_lrifle,						//boltgun ammo
-		/datum/design/autolathe/ammo/lrifle_ammobox_small,
-		/datum/design/autolathe/ammo/lrifle_ammobox_small/rubber
+		/datum/design/autolathe/ammo/lrifle_ammobox_small
 	)
 
 /obj/item/computer_hardware/hard_drive/portable/design/excelsior/makarov
@@ -170,5 +162,4 @@
 	designs = list(
 		/datum/design/autolathe/gun/hmg_maxim,
 		/datum/design/autolathe/ammo/maxim,							//Maxim ammo
-		/datum/design/autolathe/ammo/maxim/rubber,
 	)

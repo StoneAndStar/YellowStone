@@ -178,7 +178,7 @@
 			if (can_install(I, user, TRUE))
 				install(I, user)
 			return TRUE
-		else if(!cell && istype(I,/obj/item/cell/large))
+		else if(!cell && istype(I,/obj/item/cell/large/fusion))
 			if(!user.unEquip(I))
 				return
 			to_chat(user, "You jack \the [I] into \the [src]'s battery mount.")

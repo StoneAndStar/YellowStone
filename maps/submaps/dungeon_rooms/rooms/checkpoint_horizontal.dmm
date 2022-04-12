@@ -83,7 +83,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "r" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/dark/brown_platform,
@@ -114,7 +114,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/crawler)
 "x" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "y" = (

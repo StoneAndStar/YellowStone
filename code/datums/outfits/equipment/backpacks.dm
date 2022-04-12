@@ -16,10 +16,6 @@
 	name = "Backpack"
 	path = /obj/item/storage/backpack
 
-/decl/backpack_outfit/backsport
-	name = "Sport Backpack"
-	path = /obj/item/storage/backpack/sport
-
 /decl/backpack_outfit/satchel
 	name = "Satchel"
 	path = /obj/item/storage/backpack/satchel

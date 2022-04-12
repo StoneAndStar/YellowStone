@@ -95,6 +95,17 @@
 	..(newloc,MATERIAL_SILVER,MATERIAL_GOLD)
 /turf/simulated/wall/sandstonediamond/New(var/newloc)
 	..(newloc,MATERIAL_SANDSTONE,MATERIAL_DIAMOND)
+/turf/simulated/wall/wood/New(var/newloc)
+	..(newloc,MATERIAL_WOOD)
+
+/turf/simulated/wall/wood
+	icon_state = "wood"
+	icon_base_override = "wood"
+
+/turf/simulated/wall/wood_old
+	icon_state = "oldwood"
+	icon_base_override = "oldwood"
+
 
 // Kind of wondering if this is going to bite me in the butt.
 /turf/simulated/wall/voxshuttle/New(var/newloc)

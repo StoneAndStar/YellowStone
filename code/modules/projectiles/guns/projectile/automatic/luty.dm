@@ -54,12 +54,12 @@
 				caliber = CAL_PISTOL
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .35 Caliber."))
 			else if(caliber == CAL_PISTOL)
-				caliber = CAL_CLRIFLE
+				caliber = CAL_22
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .25 Caseless."))
-			else if(caliber == CAL_CLRIFLE)
+			else if(caliber == CAL_22)
 				caliber = CAL_MAGNUM
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .40 Magnum."))
-		else 
+		else
 			to_chat(user, SPAN_WARNING("You cannot rechamber a loaded firearm!"))
 			return
 	..()

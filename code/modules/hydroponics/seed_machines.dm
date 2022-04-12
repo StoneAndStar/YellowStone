@@ -1,5 +1,5 @@
 /obj/machinery/botany
-	icon = 'icons/obj/hydroponics_machines.dmi'
+	icon = 'icons/obj/flora/hydroponics_machines.dmi'
 	icon_state = "hydrotray"
 	density = TRUE
 	anchored = TRUE

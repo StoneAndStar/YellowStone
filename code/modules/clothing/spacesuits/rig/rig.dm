@@ -57,7 +57,7 @@
 	var/helm_type =  /obj/item/clothing/head/space/rig
 	var/boot_type =  /obj/item/clothing/shoes/magboots/rig
 	var/glove_type = /obj/item/clothing/gloves/rig
-	var/cell_type =  /obj/item/cell/large/high
+	var/cell_type =  /obj/item/cell/large/fusion
 	var/air_type =   /obj/item/tank/oxygen
 
 	//Component/device holders.
@@ -66,7 +66,7 @@
 	var/obj/item/clothing/suit/space/rig/chest                // Deployable chestpiece, if any.
 	var/obj/item/clothing/head/space/rig/helmet				 // Deployable helmet, if any.
 	var/obj/item/clothing/gloves/rig/gloves					// Deployable gauntlets, if any.
-	var/obj/item/cell/large/cell						// Power supply, if any.
+	var/obj/item/cell/large/fusion/cell						// Power supply, if any.
 	var/obj/item/rig_module/selected_module      		      // Primary system (used with middle-click)
 	var/obj/item/rig_module/vision/visor                      // Kinda shitty to have a var for a module, but saves time.
 	var/obj/item/rig_module/voice/speech                      // As above.

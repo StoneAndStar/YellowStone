@@ -1,3 +1,4 @@
+/*
 /datum/job/rd
 	title = "Moebius Expedition Overseer"
 	flag = MEO
@@ -168,3 +169,4 @@ Lastly, though they're not commonly used, you have the facilities to construct m
 	name = "Moebius Roboticist"
 	icon_state = "player-purple"
 	join_tag = /datum/job/roboticist
+*/

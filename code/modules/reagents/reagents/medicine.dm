@@ -712,10 +712,10 @@
 /datum/reagent/medicine/addictol
 	name = "Addictol"
 	id = "addictol"
-	description = "Purges all addictions."
+	description = "A post-war solution to ever growing presence of drugs, this concoction can fix any and all addictions that might arise."
 	taste_description = "bitterness"
 	reagent_state = LIQUID
-	color = "#0179e7"
+	color = "#182fb3"
 	scannable = 1
 	metabolism = REM/2
 

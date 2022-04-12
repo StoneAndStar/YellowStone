@@ -151,7 +151,7 @@ var/global/obj/machinery/power/eotp/eotp
 
 		else
 			for(var/mob/living/carbon/human/H in disciples)
-				if(H.mind && istype(H.mind.assigned_job, /datum/job/chaplain))
+				if(H.mind && istype(H.mind.assigned_job))
 					preacher = H
 
 			if(!preacher && length(disciples))

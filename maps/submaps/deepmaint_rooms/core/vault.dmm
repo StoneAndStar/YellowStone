@@ -533,7 +533,7 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/deepmaint)
 "bM" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /obj/item/remains/human,

@@ -7,7 +7,7 @@ LINEN BINS
 /obj/item/bedsheet
 	name = "bedsheet"
 	desc = "A surprisingly soft linen bedsheet."
-	icon = 'icons/obj/bedsheets.dmi'
+	icon = 'icons/obj/furniture/bedsheets.dmi'
 	icon_state = "sheet"
 	item_state = "bedsheet"
 	layer = 4
@@ -154,8 +154,20 @@ LINEN BINS
 	else
 		icon_state = initial(icon_state)
 
-/obj/item/bedsheet/blue
-	icon_state = "sheetblue"
+/obj/item/bedsheet/blanket_dark
+	icon_state = "blanket_dark"
+
+/obj/item/bedsheet/blanket_light
+	icon_state = "blanket_light"
+
+/obj/item/bedsheet/black
+	icon_state = "sheetblack"
+
+/obj/item/bedsheet/chestnut
+	icon_state = "sheetchest"
+
+/obj/item/bedsheet/brown
+	icon_state = "sheetbrown"
 
 /obj/item/bedsheet/green
 	icon_state = "sheetgreen"
@@ -166,14 +178,8 @@ LINEN BINS
 /obj/item/bedsheet/purple
 	icon_state = "sheetpurple"
 
-/obj/item/bedsheet/rainbow
-	icon_state = "sheetrainbow"
-
 /obj/item/bedsheet/red
 	icon_state = "sheetred"
-
-/obj/item/bedsheet/yellow
-	icon_state = "sheetyellow"
 
 /obj/item/bedsheet/mime
 	icon_state = "sheetmime"
@@ -193,14 +199,7 @@ LINEN BINS
 /obj/item/bedsheet/hos
 	icon_state = "sheethos"
 
-/obj/item/bedsheet/hop
-	icon_state = "sheethop"
 
-/obj/item/bedsheet/ce
-	icon_state = "sheetce"
-
-/obj/item/bedsheet/brown
-	icon_state = "sheetbrown"
 
 
 /obj/structure/bedsheetbin

@@ -10,9 +10,17 @@
 #define ACCESS_REGION_CHURCH 8
 #define ACCESS_REGION_CLUB 9
 
+//Fallput Access Crap
+#define ACCESS_REGION_NCR 10
+#define ACCESS_REGION_LEGION 11
+#define ACCESS_REGION_BOS 12
+#define ACCESS_REGION_TOWN 13
+#define ACCESS_REGION_KHAN 14
+
+
 // Keep those two up to date
 #define ACCESS_REGION_MIN 1
-#define ACCESS_REGION_MAX 9
+#define ACCESS_REGION_MAX 14
 
 #define ACCESS_TYPE_NONE 0
 #define ACCESS_TYPE_CENTCOM 1

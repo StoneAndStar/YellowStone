@@ -74,8 +74,6 @@
 		/datum/design/bioprinter/belt/security,
 		/datum/design/bioprinter/belt/utility,
 
-		/datum/design/bioprinter/satchel,
-		/datum/design/bioprinter/backpack,
 		/datum/design/bioprinter/wallet,
 		/datum/design/bioprinter/botanic_leather,
 
@@ -117,8 +115,6 @@
 
 		/datum/design/bioprinter/wallet,
 		/datum/design/bioprinter/botanic_leather,
-		/datum/design/bioprinter/satchel,
-		/datum/design/bioprinter/backpack,
 		/datum/design/bioprinter/belt/utility,
 		/datum/design/bioprinter/belt/medical,
 		/datum/design/bioprinter/belt/security,

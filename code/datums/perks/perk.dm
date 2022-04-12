@@ -15,6 +15,7 @@
 	var/mob/living/carbon/human/holder
 	var/gain_text
 	var/lose_text
+	var/cooldown_time = 0
 	var/perk_shared_ability
 
 /datum/perk/Destroy()
@@ -32,6 +33,12 @@
 	if(holder.stat == DEAD)
 		return FALSE
 	return TRUE
+
+/datum/perk/proc/activate()
+	//log_debug("Ah, fuck, I can't believe you've done this.  Perk [src] without a custom defined activate called")
+
+/datum/perk/proc/deactivate()
+	//log_debug("Ah, fuck, I can't believe you've done this.  Perk [src] without a custom defined deactivate called")
 
 /// Proc called when the perk is assigned to a human. Should be the first thing to be called.
 /datum/perk/proc/assign(mob/living/carbon/human/H)

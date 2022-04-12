@@ -1,7 +1,7 @@
 
 /datum/language/german
 	name = LANGUAGE_GERMAN
-	desc = "Language used by the inhabitants of Oberth."
+	desc = "Language used by many pre-war scientist expatriots to the United States."
 	colour = "german"
 	key = "g"
 	space_chance = 80

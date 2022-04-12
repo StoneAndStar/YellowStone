@@ -75,8 +75,8 @@
 
 //A rod with bits of pointy shrapnel stuck to it. Good weapon
 /datum/craft_recipe/tool/choppa
-	name = "Choppa"
-	result = /obj/item/tool/saw/improvised
+	name = "Crude saw"
+	result = /obj/item/tool/saw/crude
 	steps = list(
 		list(/obj/item/stack/rods, 1, 30),
 		list(QUALITY_CUTTING, 15, 150)
@@ -107,7 +107,7 @@
 		list(/obj/item/tool/crowbar/improvised, 1),
 		list(/obj/item/tool/wrench/improvised, 1),
 		list(/obj/item/tool/shovel/improvised, 1),
-		list(/obj/item/tool/saw/improvised, 1),
+		list(/obj/item/tool/saw/crude, 1),
 		list(/obj/item/tool/weldingtool/improvised, 1),
 		list(QUALITY_ADHESIVE, 15, 70)
 	)
@@ -190,7 +190,7 @@
 		list(QUALITY_HAMMERING, 10, 100),
 		list(/obj/item/stack/rods, 2, 30),
 		list(QUALITY_WELDING, 10, 100),
-		list(QUALITY_BOLT_TURNING, 10, 40), 
+		list(QUALITY_BOLT_TURNING, 10, 40),
 		list(QUALITY_ADHESIVE, 20, 30)
 	)
 

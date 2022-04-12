@@ -17,7 +17,7 @@
 /obj/structure/bed/chair/wheelchair/set_dir()
 	..()
 	cut_overlays()
-	var/image/O = image(icon = 'icons/obj/furniture.dmi', icon_state = "w_overlay", dir = src.dir)
+	var/image/O = image(icon = 'icons/obj/furniture/chairs_and_beds.dmi', icon_state = "w_overlay", dir = src.dir)
 	O.layer = ABOVE_MOB_LAYER
 	add_overlays(O)
 	if(buckled_mob)
@@ -200,7 +200,7 @@
 /obj/item/wheelchair
 	name = "wheelchair"
 	desc = "A folded wheelchair that can be carried around."
-	icon = 'icons/obj/furniture.dmi'
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "wheelchair_folded"
 	w_class = ITEM_SIZE_HUGE
 	var/obj/structure/bed/chair/wheelchair/unfolded

@@ -34,7 +34,7 @@
 /area/template_noop)
 "n" = (
 /obj/structure/bed,
-/obj/item/bedsheet/rainbow,
+,
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/wood,
 /area/template_noop)

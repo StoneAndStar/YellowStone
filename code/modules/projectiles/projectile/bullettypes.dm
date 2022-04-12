@@ -4,20 +4,64 @@ IMPORTANT
 There are important things regarding this file:
 
  * Rubbers are non sharp, embed capable objects, with non existing armor penetration. Their agony damage is generally lower then actuall one
- * The caliber ammont was lowered for a reason, don't add more bloat. If you need different values, use gun vars.
- * HV exist as antag option for better ammo.
+ * The caliber ammont here has been modified heavily from Eris with more caliber types. DO NOT add any extra calibers. If anything, some may need less varient shells.
+ * HV exist as armor-piercing ammo; sporting lower damage but higher penetration. Some HVs are Hollow Points instead of bonus armor pen. Ex: .45 ACP, .357, .44, .45-70
  * Step delays - default value is 1. Lower value makes bullet go faster, higher value makes bullet go slower.
 
 */
-//Low-caliber pistols and SMGs .35
+
+/////////////////////////////////////
+//// Lower caliber pistol rounds ////
+/////////////////////////////////////
+
+
+// .22 lr //
+
+/obj/item/projectile/bullet/clrifle
+	damage_types = list(BRUTE = 22)
+	armor_penetration = 15
+	penetrating = 1
+	sharp = TRUE
+	can_ricochet = FALSE //to reduce collateral damage and FF, since IH use it in their primary firearm
+
+/obj/item/projectile/bullet/clrifle/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 2
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+/obj/item/projectile/bullet/clrifle/hv
+	damage_types = list(BRUTE = 18)
+	armor_penetration = 20
+	step_delay = 0.75
+	can_ricochet = TRUE
+
+/obj/item/projectile/bullet/clrifle/rubber
+	icon_state = "rubber"
+	name = "rubber bullet"
+	damage_types = list(BRUTE = 3)
+	agony = 16
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = TRUE
+
+/obj/item/projectile/bullet/clrifle/scrap
+	damage_types = list(BRUTE = 20)
+
+//	9mm pistol //
+
 /obj/item/projectile/bullet/pistol
-	damage_types = list(BRUTE = 28)
+	damage_types = list(BRUTE = 26)
 	armor_penetration = 10
 	can_ricochet = TRUE
 	penetrating = 1
 
 /obj/item/projectile/bullet/pistol/hv
-	damage_types = list(BRUTE = 32)
+	damage_types = list(BRUTE = 22)
 	armor_penetration = 20
 	step_delay = 0.75
 
@@ -34,7 +78,7 @@ There are important things regarding this file:
 	icon_state = "rubber"
 	name = "rubber bullet"
 	damage_types = list(BRUTE = 3)
-	agony = 25
+	agony = 20
 	armor_penetration = 0
 	embed = FALSE
 	sharp = FALSE
@@ -42,15 +86,237 @@ There are important things regarding this file:
 /obj/item/projectile/bullet/pistol/scrap
 	damage_types = list(BRUTE = 25)
 
-//Carbines and rifles
+//	10mm pistol //
 
-// .20 rifle
+/obj/item/projectile/bullet/hpistol
+	damage_types = list(BRUTE = 28)
+	armor_penetration = 15
+	can_ricochet = TRUE
+	penetrating = 1
+
+/obj/item/projectile/bullet/hpistol/hv
+	damage_types = list(BRUTE = 24)
+	armor_penetration = 25
+	step_delay = 0.75
+
+/obj/item/projectile/bullet/hpistol/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+/obj/item/projectile/bullet/hpistol/rubber
+	icon_state = "rubber"
+	name = "rubber bullet"
+	damage_types = list(BRUTE = 3)
+	agony = 24
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+
+/obj/item/projectile/bullet/hpistol/scrap
+	damage_types = list(BRUTE = 25)
+
+//	.45 ACP pistol //
+
+/obj/item/projectile/bullet/pistol45
+	damage_types = list(BRUTE = 28)
+	armor_penetration = 5
+	can_ricochet = TRUE
+	penetrating = 1
+
+//Hollow point instead of AP round
+/obj/item/projectile/bullet/pistol45/hv
+	name = "hollow-point bullet"
+	damage_types = list(BRUTE = 24)
+	agony = 20
+	armor_penetration = 0
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.65
+
+/obj/item/projectile/bullet/pistol45/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+/obj/item/projectile/bullet/pistol45/rubber
+	icon_state = "rubber"
+	name = "rubber bullet"
+	damage_types = list(BRUTE = 3)
+	agony = 24
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+
+/obj/item/projectile/bullet/pistol45/scrap
+	damage_types = list(BRUTE = 25)
+
+
+////////////////////////////////////////////
+//// Revolvers and high-caliber pistols ////
+////////////////////////////////////////////
+
+
+//	.357 Magnum //
+
+/obj/item/projectile/bullet/revolver
+	damage_types = list(BRUTE = 32)
+	armor_penetration = 15
+	can_ricochet = TRUE
+	penetrating = 1
+
+/obj/item/projectile/bullet/revolver/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+//Hollow point instead of AP round
+/obj/item/projectile/bullet/revolver/hv
+	name = "hollow-point bullet"
+	damage_types = list(BRUTE = 28)
+	agony = 20
+	armor_penetration = 0
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.65
+
+
+//	.44 Magnum //
+
+/obj/item/projectile/bullet/magnum
+	damage_types = list(BRUTE = 34)
+	armor_penetration = 20
+	can_ricochet = TRUE
+	penetrating = 1
+
+/obj/item/projectile/bullet/magnum/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+//Hollow point instead of AP round
+/obj/item/projectile/bullet/magnum/hv
+	name = "hollow-point bullet"
+	damage_types = list(BRUTE = 30)
+	agony = 20
+	armor_penetration = 0
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.65
+
+/obj/item/projectile/bullet/magnum/rubber
+	icon_state = "rubber"
+	name = "rubber bullet"
+	damage_types = list(BRUTE = 8)
+	agony = 32
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+
+//	.45-70 Govt //
+
+/obj/item/projectile/bullet/magnum
+	damage_types = list(BRUTE = 36)
+	armor_penetration = 25
+	can_ricochet = TRUE
+	penetrating = 1
+	step_delay = 0.80
+
+/obj/item/projectile/bullet/magnum/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+//Hollow point instead of AP round
+/obj/item/projectile/bullet/magnum/hv
+	name = "hollow-point bullet"
+	damage_types = list(BRUTE = 32)
+	agony = 20
+	armor_penetration = 0
+	penetrating = 0
+	can_ricochet = FALSE
+	embed = TRUE
+	sharp = TRUE
+	step_delay = 0.65
+
+//	12.7mm BIIIG PISTOL //
+
+/obj/item/projectile/bullet/govt
+	damage_types = list(BRUTE = 40)
+	armor_penetration = 20
+	can_ricochet = TRUE
+	penetrating = 1
+	step_delay = 0.80
+
+/obj/item/projectile/bullet/govt/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 3
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+
+/////////////////////////////
+//// Carbines and rifles ////
+/////////////////////////////
+
+
+//	5mm rifle //
+
+/obj/item/projectile/bullet/rifle_5mm
+	damage_types = list(BRUTE = 20)
+	armor_penetration = 35
+	penetrating = 1
+	can_ricochet = TRUE
+
+/obj/item/projectile/bullet/srifle/nomuzzle
+	muzzle_type = null
+
+/obj/item/projectile/bullet/rifle_5mm/practice
+	name = "practice bullet"
+	damage_types = list(BRUTE = 2)
+	agony = 2
+	armor_penetration = 0
+	embed = FALSE
+	sharp = FALSE
+	can_ricochet = FALSE
+
+//	5.56 rifle //
 
 /obj/item/projectile/bullet/srifle
-	damage_types = list(BRUTE = 25)
+	damage_types = list(BRUTE = 26)
 	armor_penetration = 25
 	penetrating = 1
 	can_ricochet = TRUE
+	step_delay = 0.75
 
 /obj/item/projectile/bullet/srifle/nomuzzle
 	muzzle_type = null
@@ -65,9 +331,12 @@ There are important things regarding this file:
 	can_ricochet = FALSE
 
 /obj/item/projectile/bullet/srifle/hv
-	damage_types = list(BRUTE = 30)
+	damage_types = list(BRUTE = 22)
+	can_ricochet = TRUE
+	penetrating = 2
 	armor_penetration = 30
-	step_delay = 0.75
+	step_delay = 0.65
+	nocap_structures = TRUE
 
 /obj/item/projectile/bullet/srifle/rubber
 	icon_state = "rubber"
@@ -81,44 +350,7 @@ There are important things regarding this file:
 /obj/item/projectile/bullet/srifle/scrap
 	damage_types = list(BRUTE = 22)
 
-// .25 caseless rifle
-
-/obj/item/projectile/bullet/clrifle
-	damage_types = list(BRUTE = 27)
-	armor_penetration = 15
-	penetrating = 1
-	sharp = TRUE
-	can_ricochet = FALSE //to reduce collateral damage and FF, since IH use it in their primary firearm
-
-/obj/item/projectile/bullet/clrifle/practice
-	name = "practice bullet"
-	damage_types = list(BRUTE = 2)
-	agony = 2
-	armor_penetration = 0
-	embed = FALSE
-	sharp = FALSE
-	can_ricochet = FALSE
-
-/obj/item/projectile/bullet/clrifle/hv
-	damage_types = list(BRUTE = 32)
-	armor_penetration = 20
-	step_delay = 0.75
-	can_ricochet = TRUE
-
-/obj/item/projectile/bullet/clrifle/rubber
-	icon_state = "rubber"
-	name = "rubber bullet"
-	damage_types = list(BRUTE = 3)
-	agony = 22
-	armor_penetration = 0
-	embed = FALSE
-	sharp = FALSE
-	can_ricochet = TRUE
-
-/obj/item/projectile/bullet/clrifle/scrap
-	damage_types = list(BRUTE = 24)
-
-// .30 rifle
+//	7.62 rifle //
 
 /obj/item/projectile/bullet/lrifle
 	damage_types = list(BRUTE = 28)
@@ -136,56 +368,23 @@ There are important things regarding this file:
 	can_ricochet = FALSE
 
 /obj/item/projectile/bullet/lrifle/hv
-	damage_types = list(BRUTE = 30)
-	armor_penetration = 30
-	step_delay = 0.75
-
-/obj/item/projectile/bullet/lrifle/rubber
-	icon_state = "rubber"
-	name = "rubber bullet"
-	damage_types = list(BRUTE = 3)
-	agony = 25
-	armor_penetration = 0
-	embed = FALSE
-	sharp = FALSE
+	damage_types = list(BRUTE = 24)
+	can_ricochet = TRUE
+	penetrating = 2
+	armor_penetration = 35
+	step_delay = 0.65
+	nocap_structures = TRUE
 
 /obj/item/projectile/bullet/lrifle/scrap
 	damage_types = list(BRUTE = 25)
 
-//Revolvers and high-caliber pistols .40
-/obj/item/projectile/bullet/magnum
-	damage_types = list(BRUTE = 34)
-	armor_penetration = 15
-	can_ricochet = TRUE
-	penetrating = 1
+///////////////////////////////
+//// Sniper Rifle Calibers ////
+///////////////////////////////
 
-/obj/item/projectile/bullet/magnum/practice
-	name = "practice bullet"
-	damage_types = list(BRUTE = 2)
-	agony = 3
-	armor_penetration = 0
-	embed = FALSE
-	sharp = FALSE
-	can_ricochet = FALSE
 
-/obj/item/projectile/bullet/magnum/hv
-	damage_types = list(BRUTE = 39)
-	armor_penetration = 20
-	step_delay = 0.75
+//	Sniper rifles .50 //
 
-/obj/item/projectile/bullet/magnum/rubber
-	icon_state = "rubber"
-	name = "rubber bullet"
-	damage_types = list(BRUTE = 8)
-	agony = 32
-	armor_penetration = 0
-	embed = FALSE
-	sharp = FALSE
-
-/obj/item/projectile/bullet/magnum/scrap
-	damage_types = list(BRUTE = 30)
-
-//Sniper rifles .60
 /obj/item/projectile/bullet/antim
 	damage_types = list(BRUTE = 70)
 	armor_penetration = 50
@@ -238,7 +437,21 @@ There are important things regarding this file:
 /obj/item/projectile/bullet/antim/scrap
 	damage_types = list(BRUTE = 63)
 
-//Shotguns .50
+//	2mm Gauss Rifle ///
+
+/obj/item/projectile/bullet/gauss
+	damage_types = list(BRUTE = 40)
+	armor_penetration = 60
+	penetrating = 1
+	hitscan = TRUE
+
+//////////////////////////////////
+//// Shotgun Slugs and Shells ////
+//////////////////////////////////
+
+
+//Shotguns
+
 /obj/item/projectile/bullet/shotgun
 	name = "slug"
 	icon_state = "slug"

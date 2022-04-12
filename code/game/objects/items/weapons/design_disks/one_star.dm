@@ -7,9 +7,8 @@
 	spawn_tags = SPAWN_TAG_DESIGN_OS
 	license = 2
 	designs = list(
-		/datum/design/autolathe/tool/crowbar_onestar,
 		/datum/design/autolathe/tool/combi_driver_onestar,
 		/datum/design/autolathe/tool/jackhammer_onestar,
 		/datum/design/autolathe/tool/drill_onestar,
-		/datum/design/autolathe/tool/weldertool_onestar
+
 	)

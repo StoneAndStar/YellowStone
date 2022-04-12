@@ -374,3 +374,40 @@
 	bad_type = /obj/item/cell/medium/mech
 	matter = list()
 	spawn_blacklisted = TRUE
+
+//FO13, for now here for testing, if I forget to move this sometime later just slap me - Lamasmaster
+//All of these have 600 charge atm
+/obj/item/cell/medium/weapon
+	name = "Testing Cell because I guess why not"
+	desc = "Non rechargable cells meant for weapons, if you see this slap a developer to fix it"
+	icon_state = "ec_alt"
+	origin_tech = list(TECH_POWER = 4)
+	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1)
+	max_chargerate = 0
+	spawn_charged = 1
+	rarity_value = 32
+
+/obj/item/cell/medium/weapon/ec
+	name = "small energy cell"
+	desc = "An energy cell, typically used as ammunition for small-arms energy weapons."
+	icon_state = "ec"
+	maxcharge = 500
+
+/obj/item/cell/medium/weapon/mfc
+	name = "microfusion cell"
+	desc = "A microfusion cell, typically used as ammunition for long-arm energy weapons."
+	icon_state = "mfc"
+	maxcharge = 1000
+
+/obj/item/cell/medium/weapon/ecp
+	name = "electron charge pack"
+	desc = "An electron charge pack, typically used in post-war energy weapons that require a lot less power than their pre-war counterparts."
+	icon_state = "ecp"
+	maxcharge = 800
+
+/obj/item/cell/large/fusion
+	name = "fusion core"
+	desc = "A pre-war high capacity fusion core primarily used to power heavy duty energy weapons and armor."
+	icon_state = "fusion"
+	origin_tech = list(TECH_POWER = 5)
+	maxcharge = 15000

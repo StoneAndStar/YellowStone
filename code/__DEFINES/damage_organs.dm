@@ -97,11 +97,13 @@
 #define BP_R_ARM  "r_arm"
 #define BP_HEAD   "head"
 #define BP_CHEST  "chest"
+#define BP_TORSO  "torso"
 #define BP_GROIN  "groin"
 #define BP_LEGS list(BP_R_LEG, BP_L_LEG)
 #define BP_ARMS list(BP_R_ARM, BP_L_ARM)
 #define BP_ALL_LIMBS list(BP_CHEST, BP_GROIN, BP_HEAD, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG)
 #define BP_BY_DEPTH list(BP_HEAD, BP_L_ARM, BP_R_ARM, BP_L_LEG, BP_R_LEG, BP_GROIN, BP_CHEST)
+#define BP_BASE_PARTS list(BP_TORSO, BP_GROIN)
 
 // Organs helpers.
 #define BP_IS_ORGANIC(org)  (org.nature == MODIFICATION_ORGANIC)

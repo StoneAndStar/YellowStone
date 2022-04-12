@@ -399,9 +399,9 @@
 
 /obj/machinery/microwave/campfire
 	name = "burn barrel"
-	icon = 'icons/obj/kitchen.dmi'
-	icon_state = "barrelfire"
-	desc = "A fire in an old barrel. Perfect for campouts in the far corners of the ship."
+	icon = 'icons/obj/furniture/heating.dmi'
+	icon_state = "burnbarrel"
+	desc = "A fire in an old barrel."
 	use_power = FALSE
 	idle_power_usage = 0
 	active_power_usage = 0
@@ -423,12 +423,12 @@
 	if(!lit)
 		playsound(loc, 'sound/effects/flare.ogg', 50, 1)
 		visible_message(SPAN_NOTICE("The fire is stoked up."), SPAN_NOTICE("You hear a crackling fire."))
-		icon_state = "barrelfire1"
+		icon_state = "burnbarrel-fire"
 		set_light(3,2)
 		lit = TRUE
 	else
 		playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "barrelfire"
+		icon_state = "burnbarrel"
 		set_light(0)
 		lit = FALSE
 
@@ -438,34 +438,34 @@
 		playsound(loc, 'sound/effects/flare.ogg', 50, 1)
 		//playsound(loc, 'sound/effects/campfirecrackle.ogg', 50, 1) // I don't  know how to loop stuff
 		visible_message(SPAN_NOTICE("The fire is stoked up."), SPAN_NOTICE("You hear a crackling fire."))
-		icon_state = "barrelfire1"
+		icon_state = "burnbarrel-fire"
 		set_light(3,2)
 		lit = TRUE
 	else
 		playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-		icon_state = "barrelfire1"
+		icon_state = "burnbarrel-fire"
 		visible_message(SPAN_NOTICE("You hear a crackling fire."))
 
 /obj/machinery/microwave/campfire/abort()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-	icon_state = "barrelfire1"	
+	icon_state = "burnbarrel"
 
 /obj/machinery/microwave/campfire/stop()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-	icon_state = "barrelfire1"
-	
+	icon_state = "burnbarrel"
+
 /obj/machinery/microwave/campfire/dispose()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-	icon_state = "barrelfire1"
+	icon_state = "burnbarrel-fire"
 
 /obj/machinery/microwave/campfire/muck_start()
 	..()
-	icon_state = "barrelfire1"
+	icon_state = "burnbarrel-fire"
 
 /obj/machinery/microwave/campfire/muck_finish()
 	..()
 	playsound(loc, 'sound/effects/flare.ogg', 50, 1)
-	icon_state = "barrelfire"
+	icon_state = "burnbarrel"

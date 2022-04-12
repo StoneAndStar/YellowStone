@@ -11,11 +11,11 @@
 /area/crawler)
 "d" = (
 /obj/machinery/light/floor,
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/white,
 /area/crawler)
 "e" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/white,
 /area/crawler)
 "f" = (

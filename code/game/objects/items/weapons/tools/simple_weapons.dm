@@ -3,7 +3,7 @@
 /obj/item/tool/broken_bottle
 	name = "broken bottle"
 	desc = "A bottle with a sharp broken bottom."
-	icon = 'icons/obj/drinks.dmi'
+	icon = 'icons/obj/food/drinks.dmi'
 	icon_state = "broken_bottle"
 	matter = list(MATERIAL_GLASS = 2)
 	worksound = WORKSOUND_HARD_SLASH
@@ -15,7 +15,7 @@
 	edge = FALSE
 	max_upgrades = 1 //it's not even a tool
 	tool_qualities = list(QUALITY_CUTTING = 10)
-	var/icon/broken_outline = icon('icons/obj/drinks.dmi', "broken")
+	var/icon/broken_outline = icon('icons/obj/food/drinks.dmi', "broken")
 	spawn_tags = SPAWN_TAG_JUNKTOOL
 
 /obj/item/tool/nailstick

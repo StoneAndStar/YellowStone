@@ -692,6 +692,11 @@ default behaviour is:
 /mob/proc/can_be_possessed_by(var/mob/observer/ghost/possessor)
 	return istype(possessor) && possessor.client
 
+/mob/living/proc/can_feel_pain(var/check_organ)
+	if(isSynthetic())
+		return FALSE
+	return TRUE
+
 /mob/living/can_be_possessed_by(var/mob/observer/ghost/possessor)
 	if(!..())
 		return FALSE

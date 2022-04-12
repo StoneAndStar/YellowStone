@@ -3,7 +3,7 @@
 	item_state = null
 	name = "armblade"
 	desc = "A mechanical blade deployed from your arm. The favourite hidden weapon of many criminal types."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "armblade"
 	worksound = WORKSOUND_HARD_SLASH
 	force = WEAPON_FORCE_DANGEROUS

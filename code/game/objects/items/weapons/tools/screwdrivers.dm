@@ -14,7 +14,7 @@
 /obj/item/tool/screwdriver/improvised
 	name = "screwpusher"
 	desc = "A little metal rod wrapped in tape, barely qualifies as a tool. This can be fixed with enough tool mods, for which it has ample capacity."
-	icon_state = "impro_screwdriver"
+	icon_state = "crude_screwdriver"
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 15)
 	degradation = 2
 	max_upgrades = 5 //all makeshift tools get more mods to make them actually viable for mid-late game
@@ -24,7 +24,7 @@
 /obj/item/tool/screwdriver/electric
 	name = "electric screwdriver"
 	desc = "An electrical screwdriver, powered by an S class cell. Can be used as a drilling tool if necessary, though is not well suited to do so."
-	icon_state = "e-screwdriver"
+	icon_state = "adv_screwdriver"
 	worksound = WORKSOUND_DRIVER_TOOL
 	matter = list(MATERIAL_STEEL = 2, MATERIAL_PLASTIC = 1)
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 40, QUALITY_DRILLING = 10, QUALITY_BONE_SETTING = 10)
@@ -61,9 +61,9 @@
 
 
 /obj/item/tool/screwdriver/combi_driver/onestar
-	name = "One Star combi driver"
-	desc = "A One Star combi driver. Does better than the standard combi drivers on the market, but has less slots for tool mods."
-	icon_state = "one_star_combidriver"
+	name = "high-quality combi driver"
+	desc = "Does better than the standard combi drivers on the market, but has less slots for tool mods."
+	icon_state = "adv_combidriver"
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLATINUM = 2)
 	tool_qualities = list(QUALITY_SCREW_DRIVING = 60, QUALITY_BOLT_TURNING = 60, QUALITY_DRILLING = 25)
 	origin_tech = list(TECH_ENGINEERING = 3, TECH_MATERIAL = 2)

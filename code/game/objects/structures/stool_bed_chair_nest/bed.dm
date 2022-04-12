@@ -10,7 +10,7 @@
 /obj/structure/bed
 	name = "bed"
 	desc = "This is used to lie in, sleep in or strap on."
-	icon = 'icons/obj/furniture.dmi'
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "bed"
 	anchored = TRUE
 	can_buckle = TRUE
@@ -19,7 +19,7 @@
 	var/material/material
 	var/material/padding_material
 	var/base_icon = "bed"
-	var/applies_material_colour = 1
+	var/applies_material_colour = 0
 
 /obj/structure/bed/New(var/newloc, var/new_material, var/new_padding_material)
 	..(newloc)
@@ -45,6 +45,7 @@
 	if(padding_material)
 		LAZYAPLUS(., padding_material.name, 1)
 
+/* Commented out since not used with FO beds
 // Reuse the cache/code from stools, todo maybe unify.
 /obj/structure/bed/on_update_icon()
 	// Prep icon.
@@ -53,7 +54,7 @@
 	// Base icon.
 	var/cache_key = "[base_icon]-[material.name]"
 	if(isnull(stool_cache[cache_key]))
-		var/image/I = image('icons/obj/furniture.dmi', base_icon)
+		var/image/I = image('icons/obj/furniture/chairs_and_beds.dmi', base_icon)
 		if(applies_material_colour)
 			I.color = material.icon_colour
 		stool_cache[cache_key] = I
@@ -66,6 +67,7 @@
 			I.color = padding_material.icon_colour
 			stool_cache[padding_cache_key] = I
 		associate_with_overlays(stool_cache[padding_cache_key])
+*/
 
 	// Strings.
 	desc = initial(desc)
@@ -113,7 +115,7 @@
 	if(W.has_quality(QUALITY_BOLT_TURNING))
 		playsound(src.loc, 'sound/items/Ratchet.ogg', 50, 1)
 		dismantle()
-	else if(istype(W,/obj/item/stack))
+/*	else if(istype(W,/obj/item/stack))
 		if(padding_material)
 			to_chat(user, "\The [src] is already padded.")
 			return
@@ -147,6 +149,8 @@
 		to_chat(user, "You remove the padding from \the [src].")
 		playsound(src, 'sound/items/Wirecutter.ogg', 100, 1)
 		remove_padding()
+*/
+		return
 	else if(istype(W, /obj/item/grab))
 		var/obj/item/grab/G = W
 		var/mob/living/affecting = G.affecting
@@ -186,7 +190,7 @@
 			buckled_mob.forceMove(destination, special_event, (glide_size_override ? glide_size_override : glide_size))
 		else
 			unbuckle_mob()
-
+/* padding disabled
 /obj/structure/bed/proc/remove_padding()
 	if(padding_material)
 		padding_material.place_sheet(get_turf(src))
@@ -196,10 +200,58 @@
 /obj/structure/bed/proc/add_padding(var/padding_type)
 	padding_material = get_material_by_name(padding_type)
 	update_icon()
-
+*/
 /obj/structure/bed/proc/dismantle()
 	drop_materials(drop_location())
 	qdel(src)
+
+/obj/structure/bed/wooden
+	name = "bed"
+	desc = "Simple wooden bedframe and rustic mattress."
+	icon_state = "bed_wood"
+	base_icon = "bed_wood"
+
+/obj/structure/bed/dirty
+	name = "dirty bed"
+	desc = "Old, grimy bed."
+	icon_state = "bed_dirty"
+	base_icon = "bed_dirty"
+
+/obj/structure/bed/mattress
+	name = "mattress"
+	desc = "More or less clean mattress."
+	icon_state = "mattress0"
+	base_icon = "mattress0"
+
+/obj/structure/bed/mattress/simple
+	name = "mattress"
+	desc = "Mattress on the floor, no pillow."
+	icon_state = "mattress1"
+	base_icon = "mattress1"
+
+/obj/structure/bed/mattress/dirty
+	name = "dirty mattress"
+	desc = "Dirty mattress."
+	icon_state = "mattress2"
+	base_icon = "mattress2"
+
+/obj/structure/bed/mattress/bloody
+	name = "bloody mattress"
+	desc = "Bloody mattress."
+	icon_state = "mattress3"
+	base_icon = "mattress3"
+
+/obj/structure/bed/mattress/bloodsoaked
+	name = "bloodsoaked mattress"
+	desc = "Bloody mattress."
+	icon_state = "mattress4"
+	base_icon = "mattress4"
+
+/obj/structure/bed/mattress/moldy
+	name = "moldy mattress"
+	desc = "Moldy mattress."
+	icon_state = "mattress5"
+	base_icon = "mattress5"
 
 /obj/structure/bed/psych
 	name = "psychiatrist's couch"
@@ -225,7 +277,7 @@
  */
 /obj/structure/bed/roller
 	name = "roller bed"
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "down"
 	anchored = FALSE
 	buckle_pixel_shift = "x=0;y=6"
@@ -250,7 +302,7 @@
 /obj/item/roller
 	name = "roller bed"
 	desc = "A collapsed roller bed that can be carried around."
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "folded"
 	item_state = "rbed"
 	slot_flags = SLOT_BACK
@@ -290,7 +342,7 @@
 /obj/item/roller_holder
 	name = "roller bed rack"
 	desc = "A rack for carrying a collapsed roller bed."
-	icon = 'icons/obj/rollerbed.dmi'
+	icon = 'icons/obj/medical/rollerbed.dmi'
 	icon_state = "folded"
 	var/max_stored = 4
 	var/list/obj/item/roller/held = list()

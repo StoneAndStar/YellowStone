@@ -12,7 +12,7 @@ calculate text size per text.
 	if(ishuman(src))
 		var/mob/living/carbon/human/H = src
 		var/taste_level = H.species.taste_sensitivity
-		if(H.stats.getPerk(PERK_OBORIN_SYNDROME))
+		if(H.stats.getPerk(PERK_SICKLY_UPBRINGING))
 			taste_level = TASTE_NUMB
 		minimum_percent = round(15/taste_level)
 	if(minimum_percent < 100)

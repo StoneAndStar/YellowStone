@@ -314,7 +314,7 @@
 	desc = "Its cold eye seeks to dominate what it surveys."
 	icon_state = "core"
 //	desc = "This Pickle, aside from being attached to several wires, is releasing grey ooze from its many wounds."
-//	icon = 'icons/obj/food.dmi'
+//	icon = 'icons/obj/food/food.dmi'
 //	icon_state = "pickle"
 //	When Hope Is Gone Undo This Lock And Send Me Forth On A Moonlit Walk. inotherwordsimgonnadoitagain
 	max_health = 420
@@ -324,8 +324,6 @@
 	//internals
 	var/list/my_wireweeds = list()
 	var/list/reward_item = list(
-		/obj/item/tool/weldingtool/hivemind,
-		/obj/item/tool/crowbar/pneumatic/hivemind,
 		/obj/item/reagent_containers/glass/beaker/hivemind,
 		/obj/item/oddity/hivemind/old_radio,
 		/obj/item/oddity/hivemind/old_pda

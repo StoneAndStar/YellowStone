@@ -986,14 +986,6 @@
 	inspiration = null
 	SSnano.update_uis(src)
 
-#undef ERR_OK
-#undef ERR_NOTFOUND
-#undef ERR_NOMATERIAL
-#undef ERR_NOREAGENT
-#undef ERR_NOLICENSE
-#undef ERR_PAUSED
-#undef ERR_NOINSIGHT
-
 // A version with some materials already loaded, to be used on map spawn
 /obj/machinery/autolathe/loaded
 	stored_material = list(

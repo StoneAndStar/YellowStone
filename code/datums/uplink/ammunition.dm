@@ -90,12 +90,6 @@
 	item_cost = 2
 	path = /obj/item/ammo_magazine/srifle
 
-/datum/uplink_item/item/ammo/srifle/highvelocity
-	name = ".20 Rifle HV magazine"
-	desc = "Standard .20 magazine with high velocity ammunition. Well known for it's armor penetrating capabilities. Can fit 20 bullets."
-	item_cost = 3
-	path = /obj/item/ammo_magazine/srifle/hv
-
 /datum/uplink_item/item/ammo/ihclrifle
 	name = ".25 caseless magazine"
 	desc = "Standard .25 magazine with lethal ammunition. Used mostly in IHS carabines. Can fit 30 bullets."
@@ -143,7 +137,7 @@
 	desc = "An High Velocity ammo strip designed for bolt action rifles. Contains 5 rounds."
 	item_cost = 2
 	path = /obj/item/ammo_magazine/sllrifle/hv
-	
+
 //// HV ammo packets ////
 
 /datum/uplink_item/item/ammo/pistol_hv

@@ -7,8 +7,8 @@
 	w_class = ITEM_SIZE_BULKY
 	ammo_mag = "ih_sol"
 	load_method = MAGAZINE
-	mag_well = MAG_WELL_IH
-	caliber = CAL_CLRIFLE
+	mag_well = MAG_WELL_RIFLE
+	caliber = CAL_22
 	magazine_type = /obj/item/ammo_magazine/ihclrifle
 	auto_eject = 1
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)

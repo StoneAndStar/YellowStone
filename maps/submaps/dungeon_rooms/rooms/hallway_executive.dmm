@@ -7,7 +7,7 @@
 /turf/simulated/wall/untinted/onestar_reinforced,
 /area/crawler)
 "c" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 1
 	},
 /obj/machinery/light/floor,
@@ -17,7 +17,7 @@
 /turf/simulated/floor/wood,
 /area/crawler)
 "e" = (
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/wood,
 /area/crawler)
 "f" = (
@@ -38,7 +38,7 @@
 /turf/simulated/floor/wood,
 /area/crawler)
 "i" = (
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/machinery/light/floor,
 /turf/simulated/floor/wood,
 /area/crawler)
@@ -59,7 +59,7 @@
 /turf/simulated/wall/untinted/onestar_reinforced,
 /area/crawler)
 "n" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/wood,
@@ -69,7 +69,7 @@
 /turf/simulated/floor/tiled/derelict,
 /area/crawler)
 "p" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/wood,
@@ -95,7 +95,7 @@
 /turf/simulated/floor/wood,
 /area/crawler)
 "s" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 1
 	},
 /turf/simulated/floor/wood,

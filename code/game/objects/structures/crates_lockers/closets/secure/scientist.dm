@@ -5,10 +5,6 @@
 	icon_state = "science"
 
 /obj/structure/closet/secure_closet/personal/scientist/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/purple/scientist(src)
-	else
-		new /obj/item/storage/backpack/satchel/purple/scientist(src)
 	new /obj/item/clothing/under/rank/scientist(src)
 	//new /obj/item/clothing/suit/labcoat/science(src)
 	new /obj/item/clothing/suit/storage/toggle/labcoat(src)

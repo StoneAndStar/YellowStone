@@ -52,7 +52,7 @@
 /turf/simulated/floor/tiled/steel/orangecorner/airless,
 /area/template_noop)
 "bE" = (
-/obj/structure/bed/chair/wood,
+/obj/structure/bed/chair/custom/wood,
 /turf/simulated/floor/wood/airless,
 /area/template_noop)
 "bG" = (
@@ -266,7 +266,7 @@
 /turf/simulated/floor/tiled/steel/orangecorner/airless,
 /area/template_noop)
 "zO" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	dir = 8
 	},
 /turf/simulated/floor/wood/airless,
@@ -443,7 +443,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "NH" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	dir = 1
 	},
 /turf/simulated/floor/carpet/airless,
@@ -467,7 +467,7 @@
 /turf/simulated/wall,
 /area/template_noop)
 "Pb" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated/airless,

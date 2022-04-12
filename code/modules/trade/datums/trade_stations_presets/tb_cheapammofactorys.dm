@@ -34,12 +34,9 @@
 		),
 		".20 Caliber" = list(
 			/obj/item/ammo_magazine/srifle,
-			/obj/item/ammo_magazine/srifle/rubber,
 
 			/obj/item/ammo_magazine/ammobox/srifle_small,
-			/obj/item/ammo_magazine/ammobox/srifle_small/rubber,
-			/obj/item/ammo_magazine/ammobox/srifle,
-			/obj/item/ammo_magazine/ammobox/srifle/rubber
+			/obj/item/ammo_magazine/ammobox/srifle
 		),
 		".25 Caliber" = list(
 			/obj/item/ammo_magazine/ihclrifle,
@@ -49,19 +46,15 @@
 			/obj/item/ammo_magazine/cspistol/rubber,
 
 			/obj/item/ammo_magazine/ammobox/clrifle,
-			/obj/item/ammo_magazine/ammobox/clrifle/rubber,
-			/obj/item/ammo_magazine/ammobox/clrifle_small,
-			/obj/item/ammo_magazine/ammobox/clrifle_small/rubber
+			/obj/item/ammo_magazine/ammobox/clrifle_small
 		),
 		".30 Caliber" = list(
 			/obj/item/ammo_magazine/lrifle,
-			/obj/item/ammo_magazine/lrifle/rubber,
 
 			/obj/item/ammo_magazine/sllrifle,
 
 			/obj/item/ammo_magazine/ammobox/lrifle,
-			/obj/item/ammo_magazine/ammobox/lrifle_small,
-			/obj/item/ammo_magazine/ammobox/lrifle_small/rubber
+			/obj/item/ammo_magazine/ammobox/lrifle_small
 		),
 		"Shotgun shells" = list(
 			/obj/item/ammo_magazine/ammobox/shotgun,

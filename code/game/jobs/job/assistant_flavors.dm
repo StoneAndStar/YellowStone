@@ -1,7 +1,7 @@
 /datum/job_flavor
 	var/title
 	var/list/stat_modifiers
-
+/*
 /datum/job_flavor/assistant/stat_modifiers = list(
 		STAT_ROB = 8,
 		STAT_TGH = 8,
@@ -214,3 +214,4 @@
 
 /datum/job_flavor/assistant/archimandrite
 	title = "Christian Era Vector \"Eris\" Archimandrite"
+*/

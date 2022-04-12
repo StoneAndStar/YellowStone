@@ -84,6 +84,17 @@
 
 
 
+// Fallout certified
+/obj/structure/reagent_dispensers/vat/water
+	name = "rainwater collection tank"
+	desc = "A high-capacity water tank. It is used to store HUGE amounts of water."
+	icon = 'icons/obj/furniture/stationary.dmi'
+	icon_state = "vat"
+	volume = 3000
+	price_tag = 100
+	contents_cost = 300
+	rarity_value = 30
+
 //Dispensers
 /obj/structure/reagent_dispensers/watertank
 	name = "water tank"
@@ -279,7 +290,6 @@
 	contents_cost = 700
 	spawn_blacklisted = TRUE
 
-
 /obj/structure/reagent_dispensers/cahorsbarrel
 	name = "NeoTheology Cahors barrel"
 	desc = "Barrel a day - keeps liver away."
@@ -288,17 +298,6 @@
 	starting_reagent = "ntcahors"
 	price_tag = 50
 	contents_cost = 950
-	spawn_blacklisted = TRUE
-
-/obj/structure/reagent_dispensers/virusfood
-	name = "virus food dispenser"
-	desc = "A dispenser of virus food."
-	icon_state = "virusfoodtank"
-	amount_per_transfer_from_this = 10
-	anchored = TRUE
-	density = FALSE
-	volume = 1000
-	starting_reagent = "virusfood"
 	spawn_blacklisted = TRUE
 
 /obj/structure/reagent_dispensers/acid

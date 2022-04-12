@@ -94,15 +94,6 @@
 	name = "Neotheologian tactical belt"
 	build_path = /obj/item/storage/belt/tactical/neotheology
 
-/datum/design/bioprinter/backpack
-	name = "Cruciformed backpack"
-	build_path = /obj/item/storage/backpack/neotheology
-	materials = list(MATERIAL_BIOMATTER = 20)
-
-/datum/design/bioprinter/satchel
-	name = "Cruciformed satchel"
-	build_path = /obj/item/storage/backpack/satchel/neotheology
-
 // This separates regular clothes designs from NT clothes designs //
 
 /datum/design/bioprinter/shoes
@@ -136,11 +127,6 @@
 /datum/design/bioprinter/belt/medical/emt
 	name = "EMT belt"
 	build_path = /obj/item/storage/belt/medical/emt
-
-/datum/design/bioprinter/backpack/duffelbag
-	name = "grey duffelbag"
-	build_path = /obj/item/storage/backpack/duffelbag
-	materials = list(MATERIAL_BIOMATTER = 65)
 
 /datum/design/bioprinter/wallet
 	name = "Wallet"

@@ -1,6 +1,6 @@
 /obj/item/organ
 	name = "organ"
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	germ_level = 0
 	matter = list(MATERIAL_BIOMATTER = 20)
 	bad_type = /obj/item/organ

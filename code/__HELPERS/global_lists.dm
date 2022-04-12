@@ -47,7 +47,8 @@ GLOBAL_LIST_EMPTY(hearing_objects)			//list of all objects, that can hear mob sa
 //Jobs and economy
 GLOBAL_LIST_EMPTY(joblist)					//list of all jobstypes, minus borg and AI
 GLOBAL_LIST_EMPTY(all_departments)			//List of all department datums
-var/global/list/department_IDs = list(DEPARTMENT_COMMAND, DEPARTMENT_MEDICAL, DEPARTMENT_ENGINEERING,
+var/global/list/department_IDs = list(DEPARTMENT_BOS, DEPARTMENT_NCR, DEPARTMENT_LEGION, DEPARTMENT_KHAN, DEPARTMENT_TOWN, DEPARTMENT_WASTELAND,
+ DEPARTMENT_COMMAND, DEPARTMENT_MEDICAL, DEPARTMENT_ENGINEERING,
  DEPARTMENT_SCIENCE, DEPARTMENT_SECURITY, DEPARTMENT_GUILD, DEPARTMENT_CHURCH, DEPARTMENT_CIVILIAN, DEPARTMENT_OFFSHIP)
 GLOBAL_LIST_EMPTY(global_corporations)
 
@@ -64,8 +65,8 @@ var/list/mannequins_
 var/global/list/all_species[0]
 var/global/list/all_languages[0]
 var/global/list/language_keys[0]					// Table of say codes for all languages
-var/global/list/whitelisted_species = list(SPECIES_HUMAN) // Species that require a whitelist check.
-var/global/list/playable_species = list(SPECIES_HUMAN)    // A list of ALL playable species, whitelisted, latejoin or otherwise.
+var/global/list/whitelisted_species = list(SPECIES_HUMAN, SPECIES_GHOUL, SPECIES_MUTANT) // Species that require a whitelist check.
+var/global/list/playable_species = list(SPECIES_HUMAN, SPECIES_GHOUL, SPECIES_MUTANT)    // A list of ALL playable species, whitelisted, latejoin or otherwise.
 
 // Posters
 GLOBAL_LIST_EMPTY(poster_designs)
@@ -103,7 +104,7 @@ GLOBAL_LIST_EMPTY(facial_hair_styles_list) //stores /datum/sprite_accessory/faci
 
 GLOBAL_DATUM_INIT(underwear, /datum/category_collection/underwear, new())
 
-var/global/list/exclude_jobs = list(/datum/job/ai,/datum/job/cyborg)
+var/global/list/exclude_jobs = list()
 
 var/global/list/organ_structure = list(
 	BP_CHEST = list(name= "Chest", children=list(BP_GROIN, BP_HEAD, BP_L_ARM, BP_R_ARM, OP_HEART, OP_LUNGS, OP_STOMACH)),

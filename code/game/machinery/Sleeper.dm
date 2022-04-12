@@ -1,7 +1,7 @@
 /obj/machinery/sleeper
 	name = "sleeper"
 	desc = "A fancy bed with built-in injectors, a dialysis machine, and a limited health scanner."
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_0"
 	density = TRUE
 	anchored = TRUE

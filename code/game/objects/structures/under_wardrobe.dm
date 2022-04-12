@@ -3,7 +3,7 @@
 /obj/structure/undies_wardrobe
 	name = "underwear wardrobe"
 	desc = "Holds item of clothing you shouldn't be showing off in the hallways."
-	icon = 'icons/obj/closet.dmi'
+	icon = 'icons/obj/furniture/closet.dmi'
 	icon_state = "cabinet_closed"
 	w_class = ITEM_SIZE_NORMAL
 	density = TRUE

@@ -1,23 +1,7 @@
-/datum/perk/fate/paper_worm
-	name = "Paper Worm"
-	desc = "You were a clerk and bureaucrat for all your life. Cramped offices with angry people is where your personality was forged. \
-			You have lower stats all around, but have a higher chance to have increased stat growth on level up."
-	icon_state = "paper"
-
-/datum/perk/fate/paper_worm/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.sanity.positive_prob += 20
-
-/datum/perk/fate/paper_worm/remove()
-	if(holder)
-		holder.sanity.positive_prob -= 20
-	..()
-
 /datum/perk/fate/freelancer
-	name = "Freelancer"
-	icon_state = "skills"
-	desc = "Whatever was your job, you never stayed in one place for too long or had lasting contracts. \
+	name = "Jack of All Trades"
+	icon_state = "wanted"
+	desc = "Whatever job needs doing, you can probably do it! You're a jack of all trades, after all. But.. you're also a master at none. \
 			This perk checks your highest stat, lowers it by 10 and improves all others by 4."
 
 /datum/perk/fate/freelancer/assign(mob/living/carbon/human/H)
@@ -119,10 +103,10 @@
 	..()
 
 /datum/perk/fate/noble
-	name = "Noble"
+	name = "Sheltered Life"
 	icon_state = "family" //https://game-icons.net
-	desc = "You are a descendant of a long-lasting family, bearing a name of high status that can be traced back to the early civilization of your domain. \
-			Start with an heirloom weapon, higher chance to be on traitor contracts and removed sanity cap. Stay clear of filth and danger."
+	desc = "You lived a sheltered life as a child, sheltered from what the earth had become around you. A rarity considering these trying times and lack of long-lasting families. \
+			Start with an heirloom weapon and a removed sanity cap. Stay clear of filth and danger."
 
 /datum/perk/fate/noble/assign(mob/living/carbon/human/H)
 	..()
@@ -162,10 +146,10 @@
 	..()
 
 /datum/perk/fate/rat
-	name = "Rat"
-	desc = "For all you know, taking what isn't yours is what you were best at. Be that roguery, theft or murder. It’s all the same no matter how you name it, after all. \
+	name = "Sewer Rat"
+	desc = "You've spent the majority of your life living in a literal sewer or drainage ditch. Some areas safe from the harsh elements and out of the eyes of others. \
 			You start with a +10 to Mechanical stat and -10 to Vigilance. You will have a -10 to overall sanity health, meaning you will incur a breakdown faster than most. \
-			Additionally you have more quiet footsteps and a chance to not trigger traps on the ground."
+			Additionally you have more quiet footsteps and a chance to not trigger traps on the ground. Just like the real sewer rat you are."
 	icon_state = "rat" //https://game-icons.net/
 
 /datum/perk/fate/rat/assign(mob/living/carbon/human/H)
@@ -178,60 +162,65 @@
 		holder.sanity.max_level += 10
 	..()
 
-/datum/perk/fate/rejected_genius
-	name = "Rejected Genius"
-	desc = "You see the world in different shapes and colors. \
-			Your sanity loss cap is removed, so stay clear of corpses or filth. You have less maximum sanity and no chance to have positive breakdowns. \
-			As tradeoff, you have 50% faster insight gain."
-	icon_state = "knowledge" //https://game-icons.net/
-
-/datum/perk/fate/rejected_genius/assign(mob/living/carbon/human/H)
-	..()
-	if(holder)
-		holder.sanity.environment_cap_coeff -= 1
-		holder.sanity.positive_prob_multiplier -= 1
-		holder.sanity.insight_passive_gain_multiplier *= 1.5
-		holder.sanity.max_level -= 20
-
-/datum/perk/fate/rejected_genius/remove()
-	if(holder)
-		holder.sanity.environment_cap_coeff += 1
-		holder.sanity.positive_prob_multiplier += 1
-		holder.sanity.insight_passive_gain_multiplier /= 1.5
-		holder.sanity.max_level += 20
-	..()
-
-/datum/perk/fate/oborin_syndrome
-	name = "Oborin Syndrome"
+/datum/perk/fate/sickly_upbringing
+	name = "Sickly Upbringing"
 	icon_state = "prism" //https://game-icons.net/1x1/delapouite/prism.html
-	desc = "A condition manifested at some recent point in human history. \
-			It’s origin and prevalence are unknown, but it is speculated to be a psionic phenomenom.\
-			Your sanity pool is higher than that of others at the cost of the colors of the world."
+	desc = "You were struck down by a mysterious illneess in your early years. \
+			It's not clear what caused it but it had a permanent effect on your vision and taste. The loss of color to the world and your taste buds..\
+			You're lucky to be alive, but the outcome has had a blessing in a way. You are able to be content in life while others commonly cannot."
 
-/datum/perk/fate/oborin_syndrome/assign(mob/living/carbon/human/H)
+/datum/perk/fate/sickly_upbringing/assign(mob/living/carbon/human/H)
 	..()
 	if(holder)
 		holder.sanity.max_level += 20
 		spawn(1)
 			holder.update_client_colour() //Handle the activation of the colourblindness on the mob.
 
-/datum/perk/fate/oborin_syndrome/remove()
+/datum/perk/fate/sickly_upbringing/remove()
 	if(holder)
 		holder.sanity.max_level -= 20
 	..()
 
-/datum/perk/fate/lowborn
-	name = "Lowborn"
-	icon_state = "ladder" //https://game-icons.net/1x1/delapouite/hole-ladder.html
-	desc = "You are the bottom of society. The dirt and grime on the heel of a boot. You had one chance. You took it. \
-			You cannot be a person of authority. Additionally, you have the ability to have a name without a last name and have an increased sanity pool."
+/datum/perk/fate/klutz
+	name = "Klutz"
+	desc = "You find a lot of tasks a little beyond your ability to perform, but being accident prone has at least made you used to getting hurt."
+	icon_state = "klutz" // https://game-icons.net
 
-/datum/perk/fate/lowborn/assign(mob/living/carbon/human/H)
+/datum/perk/klutz/assign(mob/living/carbon/human/H)
 	..()
-	if(holder)
-		holder.sanity.max_level += 10
+	holder.mutations.Add(CLUMSY)
 
-/datum/perk/fate/lowborn/remove()
-	if(holder)
-		holder.sanity.max_level -= 10
+/datum/perk/klutz/remove()
+	holder.mutations.Remove(CLUMSY)
 	..()
+
+/datum/perk/fate/toxic_revenger
+	name = "Glowing One"
+	desc = "A heart of gold does not matter when blood is toxic. Those who breathe your air, share your fate. \
+			People around you receive toxin damage."
+	icon_state = "Hazmat" // https://game-icons.net
+	var/cooldown = 1 MINUTES
+	var/initial_time
+
+/datum/perk/oddity/toxic_revenger/assign(mob/living/carbon/human/H)
+	..()
+	initial_time = world.time
+
+/datum/perk/oddity/toxic_revenger/on_process()
+	if(!..())
+		return
+	if(holder.species.flags & NO_BREATHE || holder.internal)
+		return
+	if(world.time < initial_time + cooldown)
+		return
+	initial_time = world.time
+	for(var/mob/living/L in viewers(holder, 5))
+		if(!L)
+			continue
+		if(ishuman(L))
+			var/mob/living/carbon/human/H = L
+			if(H.stat == DEAD || H.internal || H.stats.getPerk(PERK_TOXIC_REVENGER) || (H.species.flags & NO_BREATHE))
+				continue
+		L.reagents?.add_reagent("toxin", 5)
+		L.emote("cough")
+		to_chat(L, SPAN_WARNING("[holder] emits a strange smell."))

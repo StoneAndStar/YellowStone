@@ -40,7 +40,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/outpost/blacksite/small)
 "bH" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/outpost/blacksite/small)
 "bS" = (
@@ -77,7 +77,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
 /area/outpost/blacksite/small)
 "dr" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 4
 	},
 /obj/item/tool/sword/katana,
@@ -89,7 +89,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/outpost/blacksite/small)
 "dN" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
@@ -98,7 +98,7 @@
 /turf/simulated/wall/untinted/onestar,
 /area/outpost/blacksite/small)
 "eH" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
 /area/outpost/blacksite/small)
 "fv" = (
@@ -165,7 +165,7 @@
 /area/outpost/blacksite/small)
 "jw" = (
 /obj/structure/window/reinforced,
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
@@ -280,7 +280,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /obj/item/remains/human,
@@ -295,7 +295,7 @@
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
 /area/outpost/blacksite/small)
 "qm" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
@@ -331,7 +331,7 @@
 /turf/simulated/floor/tiled/derelict/red_white_edges/airless,
 /area/outpost/blacksite/small)
 "rZ" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /obj/item/remains/human,
@@ -416,7 +416,7 @@
 /turf/simulated/floor/wood/airless,
 /area/outpost/blacksite/small)
 "wu" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
@@ -451,7 +451,7 @@
 /turf/simulated/floor/wood/airless,
 /area/outpost/blacksite/small)
 "yb" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 1
 	},
 /obj/spawner/junk/low_chance,
@@ -461,7 +461,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
@@ -519,7 +519,7 @@
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
 /area/outpost/blacksite/small)
 "AY" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /obj/spawner/junk/low_chance,
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
 /area/outpost/blacksite/small)
@@ -682,7 +682,7 @@
 "Lm" = (
 /obj/structure/table/onestar,
 /obj/item/tool/screwdriver/combi_driver/onestar,
-/obj/item/tool/crowbar/onestar,
+/obj/item/tool/crowbar/prewar,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/medical,
@@ -725,7 +725,7 @@
 /area/outpost/blacksite/small)
 "Nl" = (
 /obj/structure/window/basic,
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
 /area/outpost/blacksite/small)
 "NB" = (
@@ -743,7 +743,7 @@
 /area/outpost/blacksite/small)
 "Ov" = (
 /obj/structure/window/reinforced,
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
@@ -752,7 +752,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /obj/item/remains/human,
@@ -767,7 +767,7 @@
 /turf/simulated/floor/tiled/dark/brown_platform/airless,
 /area/outpost/blacksite/small)
 "Pm" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/wood/airless,
@@ -881,7 +881,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,

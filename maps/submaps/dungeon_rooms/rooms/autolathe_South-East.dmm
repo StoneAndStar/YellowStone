@@ -46,7 +46,7 @@
 /turf/simulated/floor/tiled/dark/danger,
 /area/crawler)
 "n" = (
-/obj/structure/bed/chair/custom/onestar,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/crawler)
 "o" = (

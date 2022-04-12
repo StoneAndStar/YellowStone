@@ -197,6 +197,12 @@
 	sort_string = "HABAD"
 	category = CAT_MACHINE
 
+/datum/design/research/circuit/ammolathe
+	name = "ammo bench"
+	build_path = /obj/item/electronics/circuitboard/ammolathe
+	sort_string = "HABAD"
+	category = CAT_MACHINE
+
 /datum/design/research/circuit/rdservercontrol
 	name = "R&D server control console"
 	build_path = /obj/item/electronics/circuitboard/rdservercontrol

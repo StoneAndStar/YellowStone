@@ -145,7 +145,7 @@
 /turf/simulated/floor/tiled/white/brown_platform,
 /area/deepmaint)
 "aD" = (
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "aE" = (
@@ -242,7 +242,7 @@
 /turf/simulated/floor/wood,
 /area/deepmaint)
 "aZ" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 1
 	},
 /turf/simulated/floor/wood,

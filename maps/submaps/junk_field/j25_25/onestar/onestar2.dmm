@@ -10,7 +10,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/structure/barricade,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/tiled/dark/brown_platform/airless,
@@ -74,7 +74,7 @@
 /turf/simulated/floor/tiled/techmaint_cargo/airless,
 /area/template_noop)
 "aU" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges/airless,
@@ -229,7 +229,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /obj/item/pen,
@@ -332,7 +332,7 @@
 /obj/structure/window/reinforced{
 	dir = 6
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /obj/item/remains/human,
@@ -389,7 +389,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/dark/brown_platform/airless,
@@ -471,7 +471,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/remains/human,
 /turf/simulated/floor/tiled/dark/brown_platform/airless,
 /area/template_noop)
@@ -617,7 +617,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "Qn" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges/airless,
@@ -641,7 +641,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /obj/machinery/light/floor,
@@ -670,7 +670,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "VG" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /obj/item/lipstick/black,

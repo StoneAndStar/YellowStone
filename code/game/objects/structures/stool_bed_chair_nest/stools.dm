@@ -4,7 +4,7 @@ var/global/list/stool_cache = list() //haha stool
 /obj/item/stool
 	name = "stool"
 	desc = "Apply butt."
-	icon = 'icons/obj/furniture.dmi'
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "stool_preview" //set for the map
 	force = 10
 	throwforce = 10
@@ -31,7 +31,7 @@ var/global/list/stool_cache = list() //haha stool
 
 /obj/item/stool/padded/New(var/newloc, var/new_material)
 	..(newloc, MATERIAL_STEEL, MATERIAL_CARPET)
-
+/* Separate padding not part of FO assets, sort if inclined.
 /obj/item/stool/on_update_icon()
 	// Prep icon.
 	icon_state = ""
@@ -68,7 +68,7 @@ var/global/list/stool_cache = list() //haha stool
 		padding_material.place_sheet(get_turf(src))
 		padding_material = null
 	update_icon()
-
+*/
 /obj/item/stool/attack(mob/M as mob, mob/user as mob)
 	if (prob(5) && isliving(M))
 		user.visible_message(SPAN_DANGER("[user] breaks [src] over [M]'s back!"))
@@ -104,7 +104,7 @@ var/global/list/stool_cache = list() //haha stool
 	if(padding_material)
 		padding_material.place_sheet(get_turf(src))
 	qdel(src)
-
+/* Padding disabled
 /obj/item/stool/attackby(obj/item/W, mob/user)
 	if(istool(W))
 		if(W.use_tool(user, src, WORKTIME_NEAR_INSTANT, QUALITY_BOLT_TURNING, FAILCHANCE_VERY_EASY, required_stat = STAT_MEC))
@@ -147,7 +147,7 @@ var/global/list/stool_cache = list() //haha stool
 
 	else
 		..()
-
+*/
 
 //Custom stools
 //You can't pad them with something and they craft separately
@@ -169,6 +169,6 @@ var/global/list/stool_cache = list() //haha stool
 	return
 
 
-/obj/item/stool/custom/bar_special
+/obj/structure/bed/chair/custom/barstool
 	name = "bar stool"
 	icon_state = "bar_stool"

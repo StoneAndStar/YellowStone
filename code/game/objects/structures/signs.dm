@@ -553,11 +553,6 @@
 	desc = "the Tau Cross - symbol of NeoTheology."
 	icon_state = "neotheology"
 
-/obj/structure/sign/faction/neotheology_old
-	name = "NeoTheology"
-	desc = "the Tau Cross - symbol of NeoTheology."
-	icon_state = "neotheology-old"
-
 /obj/structure/sign/faction/neotheology_cross
 	name = "NeoTheology Tau cross"
 	desc = "Religious symbol of NeoTheology - the Tau cross. It looks like a decoration, not a real cruciform."
@@ -575,16 +570,6 @@
 	name = "Technomancer League"
 	desc = "Technomancer League - anarchistic community ruled by powerful clans."
 	icon_state = "technomancers"
-
-/obj/structure/sign/faction/excelsior
-	name = "EXCELSIOR"
-	desc = "EXCELSIOR is a union of communist mining communities with no respect to any private property."
-	icon_state = "excelsior"
-
-/obj/structure/sign/faction/excelsior_old
-	name = "EXCELSIOR"
-	desc = "EXCELSIOR is a union of communist mining communities with no respect to any private property."
-	icon_state = "excelsior-old"
 
 /obj/structure/sign/derelict1
 	name = "Old sign"

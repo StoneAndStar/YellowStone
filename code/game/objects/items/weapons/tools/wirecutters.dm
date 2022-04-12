@@ -17,7 +17,7 @@
 /obj/item/tool/wirecutters/improvised
 	name = "wiremanglers"
 	desc = "An improvised monstrosity made of bent rods which can sometimes be used to snip things. Could serve you well if you stuff it with enough tool mods."
-	icon_state = "impro_cutter"
+	icon_state = "crude_cutter"
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
 	tool_qualities = list(QUALITY_WIRE_CUTTING = 20, QUALITY_RETRACTING = 10, QUALITY_BONE_SETTING = 10)
@@ -29,7 +29,7 @@
 /obj/item/tool/wirecutters/armature
 	name = "armature cutter"
 	desc = "Bigger brother of wirecutter. Can't do much in terms of emergency surgery, but does its main job better."
-	icon_state = "arm-cutter"
+	icon_state = "adv_cutter"
 	w_class = ITEM_SIZE_NORMAL
 	force = WEAPON_FORCE_NORMAL
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 1, MATERIAL_PLASTIC = 1)

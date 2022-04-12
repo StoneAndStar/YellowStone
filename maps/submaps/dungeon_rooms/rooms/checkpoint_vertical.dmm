@@ -81,7 +81,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges,
 /area/crawler)
 "u" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
@@ -91,7 +91,7 @@
 /turf/simulated/floor/tiled/techmaint_cargo,
 /area/crawler)
 "w" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,

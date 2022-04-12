@@ -30,6 +30,7 @@
 	gun_parts = list(/obj/item/stack/material/steel = 16)
 	saw_off = TRUE
 	sawn = /obj/item/gun/projectile/boltgun/obrez
+	var/bolt_training = TRUE
 	var/bolt_open = 0
 	var/item_suffix = ""
 
@@ -145,12 +146,12 @@
 				caliber = CAL_SRIFLE
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .20 Caliber."))
 			else if(caliber == CAL_SRIFLE)
-				caliber = CAL_CLRIFLE
+				caliber = CAL_22
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .25 Caseless."))
-			else if(caliber == CAL_CLRIFLE)
+			else if(caliber == CAL_22)
 				caliber = CAL_LRIFLE
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .30 Caliber."))
-		else 
+		else
 			to_chat(user, SPAN_WARNING("You cannot rechamber a loaded firearm!"))
 			return
 	..()

@@ -3,7 +3,7 @@
 /obj/machinery/bioprinter
 	name = "organ bioprinter"
 	desc = "It's a machine that grows replacement organs."
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 
 	anchored = TRUE
 	density = TRUE

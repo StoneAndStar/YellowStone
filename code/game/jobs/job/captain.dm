@@ -1,3 +1,4 @@
+/*
 var/datum/announcement/minor/captain_announcement = new(do_newscast = 1)
 
 /datum/job/captain
@@ -132,3 +133,4 @@ Act as the captain's sidekick, bodyguard, and last line of defense in a crisis o
 	name = "First Officer"
 	icon_state = "player-gold"
 	join_tag = /datum/job/hop
+*/

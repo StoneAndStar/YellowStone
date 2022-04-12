@@ -158,7 +158,7 @@
 /obj/item/bone_brace
 	name = "bone braces"
 	desc = "Little metal bits that bones can be reinforced with"
-	icon = 'icons/obj/surgery.dmi'
+	icon = 'icons/obj/medical/surgery.dmi'
 	icon_state = "bone_braces"
 	w_class = ITEM_SIZE_SMALL
 	matter = list(MATERIAL_PLASTEEL = 3)

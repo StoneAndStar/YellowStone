@@ -1,3 +1,4 @@
+/*
 /datum/job/chaplain
 	title = "NeoTheology Preacher"
 	flag = CHAPLAIN
@@ -206,3 +207,4 @@
 	name = "NeoTheology Custodian"
 	icon_state = "player-black"
 	join_tag = /datum/job/janitor
+*/

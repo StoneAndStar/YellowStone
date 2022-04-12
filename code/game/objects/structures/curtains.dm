@@ -1,6 +1,6 @@
 /obj/structure/curtain
 	name = "curtain"
-	icon = 'icons/obj/curtain.dmi'
+	icon = 'icons/obj/furniture/curtain.dmi'
 	icon_state = "closed"
 	opacity = 1
 	density = FALSE

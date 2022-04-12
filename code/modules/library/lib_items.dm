@@ -13,12 +13,27 @@
 
 /obj/structure/bookcase
 	name = "bookcase"
-	icon = 'icons/obj/library.dmi'
+	icon = 'icons/obj/furniture/stationary.dmi'
 	icon_state = "book-0"
 	matter = list(MATERIAL_WOOD = 10)
 	anchored = TRUE
 	density = TRUE
 	opacity = TRUE
+
+/obj/structure/bookcase/fake
+	icon_state = "book-1"
+
+/obj/structure/bookcase/fake2
+	icon_state = "book-2"
+
+/obj/structure/bookcase/fake3
+	icon_state = "book-3"
+
+/obj/structure/bookcase/fake4
+	icon_state = "book-4"
+
+/obj/structure/bookcase/fake5
+	icon_state = "book-5"
 
 /obj/structure/bookcase/Initialize()
 	. = ..()

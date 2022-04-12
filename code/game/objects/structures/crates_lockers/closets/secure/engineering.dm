@@ -4,10 +4,7 @@
 	icon_state = "ce"
 
 /obj/structure/closet/secure_closet/reinforced/engineering_chief/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/industrial(src)
-	else
-		new /obj/item/storage/backpack/satchel/industrial(src)
+	new /obj/item/storage/backpack/canvas(src)
 	new /obj/item/blueprints(src)
 	new /obj/item/clothing/under/rank/exultant(src)
 	new /obj/item/clothing/head/hardhat/white(src)
@@ -71,10 +68,7 @@
 	icon_door = "eng_secure"
 
 /obj/structure/closet/secure_closet/personal/engineering_personal/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/industrial(src)
-	else
-		new /obj/item/storage/backpack/satchel/industrial(src)
+	new /obj/item/storage/backpack/canvas(src)
 	new /obj/item/taperoll/engineering(src)
 	new /obj/item/storage/toolbox/mechanical(src)
 	new /obj/item/clothing/under/rank/engineer(src)
