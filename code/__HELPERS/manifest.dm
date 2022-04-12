@@ -25,7 +25,13 @@
 		list("names" = list(), "header" = "Service", "flag" = SERVICE),
 		list("names" = list(), "header" = "Technomancer League", "flag" = ENGINEERING),
 		list("names" = list(), "header" = "Miscellaneous", "flag" = MISC),
-		list("names" = list(), "header" = "Silicon")
+		list("names" = list(), "header" = "Silicon"),
+
+		list("names" = list(), "header" = "Brotherhood of Steel", "flag" = BOS),
+		list("names" = list(), "header" = "New California Republic", "flag" = NCR),
+		list("names" = list(), "header" = "Caesar's Legion", "flag" = LEGION),
+		list("names" = list(), "header" = "The Great Khans", "flag" = KHAN),
+		list("names" = list(), "header" = "Homestead", "flag" = TOWN)
 	)
 	var/list/misc //Special departments for easier access
 	var/list/bot

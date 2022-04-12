@@ -200,7 +200,6 @@
 /area/template_noop)
 "qA" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/blue,
 /obj/spawner/junk,
 /turf/simulated/floor/tiled/dark/gray_platform/airless,
 /area/template_noop)
@@ -455,7 +454,6 @@
 /area/template_noop)
 "Ou" = (
 /obj/structure/bed/padded,
-/obj/item/bedsheet/blue,
 /turf/simulated/floor/tiled/dark/gray_platform/airless,
 /area/template_noop)
 "OP" = (

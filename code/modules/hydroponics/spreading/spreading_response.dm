@@ -52,9 +52,9 @@
 		options += "Sample seed"
 		options += "Cut down"
 
-		options[options[1]] = image(icon = 'icons/obj/hydroponics_misc.dmi', icon_state = "plant_sample")
-		options[options[2]] = image(icon = 'icons/obj/hydroponics_misc.dmi', icon_state = "seed_sample")
-		options[options[3]] = image(icon = 'icons/obj/hydroponics_misc.dmi', icon_state = "plant_kill")
+		options[options[1]] = image(icon = 'icons/obj/flora/hydroponics_misc.dmi', icon_state = "plant_sample")
+		options[options[2]] = image(icon = 'icons/obj/flora/hydroponics_misc.dmi', icon_state = "seed_sample")
+		options[options[3]] = image(icon = 'icons/obj/flora/hydroponics_misc.dmi', icon_state = "plant_kill")
 
 		var/choice = show_radial_menu(user, src, options, radius = 32)
 

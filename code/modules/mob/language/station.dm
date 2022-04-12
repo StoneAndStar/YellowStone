@@ -1,6 +1,6 @@
 /datum/language/common
 	name = LANGUAGE_COMMON
-	desc = "Most popular language in Canis Majoris constellation, thanks to many USA colonial ships arrived there in distant past."
+	desc = "English. Plain and simple. Most people in post-war America know it."
 	key = "0"
 	flags = RESTRICTED
 	shorthand = "CO"
@@ -81,7 +81,7 @@
 
 /datum/language/russian
 	name = LANGUAGE_CYRILLIC
-	desc = "Ancient language of Russian colonists, rusted with time and bastardized with technical terms in everyday use."
+	desc = "The language of many pre-war Soviet expats, Russian nationals abroad and diplomats in pre-war times. Amazing this language has survived.."
 	colour = "russian"
 	key = "r"
 	space_chance = 80

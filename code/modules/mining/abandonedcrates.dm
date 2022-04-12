@@ -86,9 +86,9 @@
 		if(85 to 86)
 			new/obj/item/seeds/random(src)
 		if(87) // Rarest things, some are unobtainble otherwise, some are just robust,  1% each
-			new/obj/item/weed_extract(src)
+			new/obj/item/storage/backpack/clown(src)
 		if(88)
-			new/obj/item/xenos_claw(src)
+			new/obj/item/storage/backpack/clown(src)
 		if(90)
 			new/obj/item/organ/internal/heart(src)
 		if(91)

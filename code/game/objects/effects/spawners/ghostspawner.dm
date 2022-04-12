@@ -2,7 +2,7 @@
 	name = "Mob Spawner"
 	density = TRUE
 	anchored = TRUE
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "cryopod_0"
 	var/mob_type = null
 	var/mob_name = ""
@@ -171,12 +171,12 @@
 	add_stats(H)
 
 /obj/effect/mob_spawn/human/alive
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_1"
 
 //remnants of the opened sleepers
 /obj/structure/empty_sleeper
-	icon = 'icons/obj/Cryogenic2.dmi'
+	icon = 'icons/obj/medical/Cryogenic2.dmi'
 	icon_state = "sleeper_0"
 
 obj/effect/mob_spawn/human/Destroy()

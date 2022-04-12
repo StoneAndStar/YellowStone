@@ -3,11 +3,11 @@
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/space)
 "b" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/space)
 "c" = (
-/obj/structure/bed/chair/custom/onestar,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/white/gray_perforated,
 /area/space)
 "d" = (

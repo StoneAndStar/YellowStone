@@ -1,3 +1,4 @@
+/*
 #define LOYALTY_CIVILIAN "As a civilian, your only loyalty is to yourself and your livelihood.<br>\
 		You just want to survive, make a living, and get through the day. You shouldn't try to be a hero, or throw your life away for a cause. Nor should you hold any loyalties. Civilians should be easily corruptible, willing to take bribes to do anything someone wants and stay quiet about it."
 
@@ -79,3 +80,4 @@
 	icon_state = "player-grey"
 	join_tag = /datum/job/clubworker
 
+*/

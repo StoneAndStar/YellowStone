@@ -52,7 +52,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "an" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
@@ -65,7 +65,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "aq" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "ar" = (
@@ -146,7 +146,7 @@
 /area/template_noop)
 "aJ" = (
 /obj/structure/window/basic,
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_big_edges/airless,
 /area/template_noop)
 "aK" = (
@@ -263,7 +263,7 @@
 "bg" = (
 /obj/structure/table/onestar,
 /obj/item/tool/screwdriver/combi_driver/onestar,
-/obj/item/tool/crowbar/onestar,
+/obj/item/tool/crowbar/prewar,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/prothesis_one_star,
 /obj/spawner/medical,

@@ -1,3 +1,4 @@
+/*
 /datum/job/cmo
 	title = "Moebius Biolab Officer"
 	flag = MBO
@@ -280,3 +281,4 @@ Remember that you are a noncombatant. Any weapons you carry should be used for b
 	icon_state = "player-green"
 	join_tag = /datum/job/paramedic
 
+*/

@@ -25,5 +25,20 @@
 #define DEPARTMENT_CHURCH	"Church"
 #define DEPARTMENT_OFFSHIP "Offship"
 
-#define ALL_DEPARTMENTS list(DEPARTMENT_COMMAND, DEPARTMENT_MEDICAL, DEPARTMENT_ENGINEERING, DEPARTMENT_SCIENCE, DEPARTMENT_SECURITY, DEPARTMENT_GUILD, DEPARTMENT_CIVILIAN, DEPARTMENT_CHURCH)
+#define ALL_DEPARTMENTS list(DEPARTMENT_WASTELAND, DEPARTMENT_NCR, DEPARTMENT_LEGION, DEPARTMENT_BOS, DEPARTMENT_KHAN, DEPARTMENT_TOWN) //Hacky way of doing this but who knows
 
+//Time for Fallput 13 shit
+
+#define DEPARTMENT_WASTELAND    "Wasteland"
+#define DEPARTMENT_NCR          "New California Republic"
+#define DEPARTMENT_LEGION       "Caesar's Legion"
+#define DEPARTMENT_BOS          "Brotherhood of Steel"
+#define DEPARTMENT_KHAN         "Eighties"
+#define DEPARTMENT_TOWN         "Vault-Tek City Coalition"
+
+#define JOBS_WASTELAND	"Waster","Bandit","Outlaw"
+#define JOBS_NCR		"Captain","Lieutenant","Medical Officer","First Sergeant","Sergeant","Corporal","Military Police","Combat Medic","Combat Engineer","Heavy Trooper","Trooper","Private","NCR Off Duty","Veteran Ranger","Ranger Sergeant","Ranger"
+#define JOBS_LEGION		"Legate","Centurion","Orator","Priestess","Veteran Decanus","Prime Decanus","Recruit Decanus","Vexillarius", "Venator", "Explorer", "Libritor", "Veteran Legionary", "Prime Legionary", "Recruit Legionary", "Camp Prefect", "Auxilia", "Camp Follower", "Legion Slave", "Legion Off Duty"
+#define JOBS_BOS		"Elder","Head Paladin","Senior Paladin","Paladin","Knight Captain","Senior Knight","Knight","Head Scribe","Senior Scribe","Scribe","Initiate","BOS Off Duty"
+#define JOBS_KHAN		"Head Khan","Lead Runner","Runner","Peddler","Khemist","Scout","New Blood"
+#define JOBS_TOWN		"Founder","Alderman","Sheriff","Deputy","Reseracher","Doctor","Shopkeep","Prosepctor","Innkeeper","Civilian"

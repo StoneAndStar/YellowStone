@@ -10,7 +10,7 @@
 
 /obj/machinery/media/jukebox
 	name = "space jukebox"
-	icon = 'icons/obj/jukebox.dmi'
+	icon = 'icons/obj/furniture/jukebox.dmi'
 	icon_state = "jukebox2-nopower"
 	var/state_base = "jukebox2"
 	anchored = TRUE

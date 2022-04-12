@@ -15,7 +15,7 @@
  */
 
 /obj/item/storage/fancy
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "donutbox6"
 	name = "donut box"
 	max_storage_space = 8
@@ -46,7 +46,7 @@
  */
 
 /obj/item/storage/fancy/egg_box
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "eggbox"
 	icon_type = "egg"
 	name = "egg box"

@@ -10,6 +10,6 @@
         /obj/item/tool/crowbar/improvised,
         /obj/item/tool/wrench/improvised,
         /obj/item/tool/shovel/improvised,
-        /obj/item/tool/saw/improvised,
+        /obj/item/tool/saw/crude,
         /obj/item/tool/weldingtool/improvised
     )

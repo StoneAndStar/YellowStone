@@ -1,6 +1,7 @@
 /obj/structure/bed/chair	//YES, chairs are a type of bed, which are a type of stool. This works, believe me.	-Pete
 	name = "chair"
 	desc = "You sit in this. Either by will or force."
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
 	icon_state = "chair_preview"
 	color = "#666666"
 	base_icon = "chair"
@@ -45,16 +46,16 @@
 /obj/structure/bed/chair/on_update_icon()
 	..()
 
-/*
+
 	var/cache_key = "[base_icon]-[material.name]-over"
 	if(isnull(stool_cache[cache_key]))
-		var/image/I = image('icons/obj/furniture.dmi', "[base_icon]_over")
+		var/image/I = image('icons/obj/furniture/chairs_and_beds.dmi', "[base_icon]_over")
 		I.color = material.icon_colour
 		I.layer = FLY_LAYER
 		stool_cache[cache_key] = I
 	associate_with_overlays(stool_cache[cache_key])
-*/
-	// Padding overlay.
+
+/*	// Padding overlay.
 	if(padding_material)
 		var/padding_cache_key = "[base_icon]-padding-[padding_material.name]-over"
 		if(isnull(stool_cache[padding_cache_key]))
@@ -72,7 +73,7 @@
 			I.color = padding_material.icon_colour
 			stool_cache[cache_key] = I
 		associate_with_overlays(stool_cache[cache_key])
-
+*/
 /obj/structure/bed/chair/proc/update_layer()
 	if(src.dir == NORTH)
 		layer = ABOVE_MOB_LAYER
@@ -203,10 +204,10 @@
 
 		occupant.visible_message(SPAN_DANGER("[occupant] crashed into \the [A]!"))
 
-/obj/structure/bed/chair/office/light
+/obj/structure/bed/chair/custom/office
 	icon_state = "officechair_white"
 
-/obj/structure/bed/chair/office/dark
+/obj/structure/bed/chair/custom/office
 	icon_state = "officechair_dark"
 
 /obj/structure/bed/chair/office/New()
@@ -216,36 +217,6 @@
 	add_overlays(I)
 
 // Chair types
-
-//This should be removed and need replace all wooden chairs with custom wooden type (at map)
-//Don't want to broke something. Clock will do it, cause he's working with the map
-//from here
-/obj/structure/bed/chair/wood
-	name = "wooden chair"
-	desc = "Old is never too old to not be in fashion."
-	icon_state = "wooden_chair"
-	applies_material_colour = 0
-
-/obj/structure/bed/chair/wood/on_update_icon()
-	return
-
-/obj/structure/bed/chair/wood/attackby(obj/item/W as obj, mob/user as mob)
-	if(istype(W,/obj/item/stack) || istype(W, /obj/item/tool/wirecutters))
-		return
-	..()
-
-/obj/structure/bed/chair/wood/New(var/newloc)
-	..(newloc, MATERIAL_WOOD)
-	var/image/I = image(icon, "[icon_state]_over")
-	I.layer = FLY_LAYER
-	add_overlays(I)
-
-/obj/structure/bed/chair/wood/wings
-	icon_state = "wooden_chair_wings"
-
-//to here
-
-
 /obj/structure/bed/chair/custom
 	applies_material_colour = 0
 
@@ -263,32 +234,108 @@
 	I.layer = FLY_LAYER
 	add_overlays(I)
 
+//metal
+/obj/structure/bed/chair/custom/simple
+	name = "chair"
+	desc = "Comfortable furniture"
+	icon_state = "chair"
+
+/obj/structure/bed/chair/custom/folding
+	name = "folding chair"
+	desc = "Comfortable furniture"
+	icon_state = "folding_chair"
 
 //wooden
 /obj/structure/bed/chair/custom/wood
 	name = "wooden chair"
-	desc = "Old is never too old to not be in fashion."
+	desc = "Comfortable furniture"
 	icon_state = "wooden_chair"
 
 /obj/structure/bed/chair/custom/wood/New(var/newloc)
 	..(newloc, MATERIAL_WOOD)
 
+/obj/structure/bed/chair/custom/wood/settler
+	name = "rough wooden chair"
+	desc = "Crudely made chair."
+	icon_state = "wooden_chair_settler"
 
-/obj/structure/bed/chair/custom/wood/wings
-	icon_state = "wooden_chair_wings"
+/obj/structure/bed/chair/custom/wood/fine
+	name = "fine wooden chair"
+	desc = "Polished wood furniture"
+	icon_state = "wooden_chair_fine"
 
+/obj/structure/bed/chair/custom/wood/fancy
+	name = "fancy wooden chair"
+	desc = "Polished wood furniture"
+	icon_state = "wooden_chair_fancy"
 
-//modern
-/obj/structure/bed/chair/custom/bar_special
-	name = "bar chair"
+//bar
+/obj/structure/bed/chair/custom/barstool
+	name = "barstool"
 	desc = "Modern design and soft pad. Served up with the drink and great company."
-	icon_state = "bar_chair"
+	icon_state = "bar"
 
-//onestar
-/obj/structure/bed/chair/custom/onestar
-	name = "onestar chair"
-	desc = "A duranium chair manufactured by OneStar. Doesn't look very comfortable."
-	icon_state = "onestar_chair_grey"
+/obj/structure/bed/chair/custom/barstool/black
+	name = "barstool"
+	desc = "Modern design and soft pad. Served up with the drink and great company."
+	icon_state = "bar_black"
 
-/obj/structure/bed/chair/custom/onestar/red
-	icon_state = "onestar_chair_red"
+/obj/structure/bed/chair/custom/barstool/tan
+	name = "barstool"
+	desc = "Modern design and soft pad. Served up with the drink and great company."
+	icon_state = "bar_tan"
+
+/obj/structure/bed/chair/custom/barstool/backed
+	name = "barstool"
+	desc = "Modern design and soft pad. Served up with the drink and great company."
+	icon_state = "bar_backed"
+
+/obj/structure/bed/chair/custom/barstool/ancient
+	name = "old barstool"
+	desc = "Ancent design and soft pad. Served up with the drink and great company."
+	icon_state = "bar_old"
+
+/obj/structure/bed/chair/custom/barstool/stool
+	name = "stool"
+	desc = "Ancent design and soft pad."
+	icon_state = "stool_old"
+
+//office chair
+/obj/structure/bed/chair/custom/office
+	name = "office chair"
+	desc = "Suitable for cubicles."
+	icon_state = "office_chair"
+
+/obj/structure/bed/chair/custom/office/light
+	name = "office chair"
+	desc = "Suitable for cubicles."
+	icon_state = "office_chair_white"
+
+/obj/structure/bed/chair/custom/office/dark
+	name = "office chair"
+	desc = "Suitable for cubicles."
+	icon_state = "office_chair_dark"
+
+//comfy chairs
+/obj/structure/bed/chair/custom/plywood
+	name = "plywood chair"
+	desc = "Soft and comfy."
+	icon_state = "plywood_chair"
+
+/obj/structure/bed/chair/custom/ceo
+	name = "CEO chair"
+	desc = "Soft and comfy."
+	icon_state = "shuttle_chair"
+
+/obj/structure/bed/chair/custom/ceo
+	name = "synthetic chair"
+	desc = "Futuristic and comfy."
+	icon_state = "synthetic_chair"
+
+
+//tribal throne
+/obj/structure/bed/chair/custom/throne
+	name = "tribal throne"
+	desc = "A massive chair from various animal parts and wood."
+	icon = 'icons/obj/furniture/throne.dmi'
+	icon_state = "throne"

@@ -25,6 +25,12 @@ var/global/ManifestJSON
 	var/list/civ = new()
 	var/list/bot = new()
 	var/list/misc = new()
+	var/list/bos = new()
+	var/list/ncr = new()
+	var/list/leg = new()
+	var/list/khan = new()
+	var/list/town = new()
+	var/list/waste = new()
 	var/list/isactive = new()
 	var/dat = {"
 	<head><style>
@@ -81,6 +87,24 @@ var/global/ManifestJSON
 		if(real_rank in civilian_positions)
 			civ[name] = rank
 			department = 1
+		if(real_rank in bos_positions) //F13
+			bos[name] = rank
+			department = 1
+		if(real_rank in ncr_positions)
+			ncr[name] = rank
+			department = 1
+		if(real_rank in legion_positions)
+			leg[name] = rank
+			department = 1
+		if(real_rank in khan_positions)
+			khan[name] = rank
+			department = 1
+		if(real_rank in town_positions)
+			town[name] = rank
+			department = 1
+		if(real_rank in wasteland_positions)
+			waste[name] = rank
+			department = 1 //End
 		if(!department && !(name in heads))
 			misc[name] = rank
 
@@ -146,7 +170,36 @@ var/global/ManifestJSON
 		for(name in misc)
 			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
 			even = !even
-
+	if(bos.len > 0)
+		dat += "<tr><th colspan=3>Brotherhood of Steel</th></tr>"
+		for(name in bos)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
+	if(ncr.len > 0)
+		dat += "<tr><th colspan=3>New California Republic</th></tr>"
+		for(name in ncr)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
+	if(leg.len > 0)
+		dat += "<tr><th colspan=3>Caesar's Legion</th></tr>"
+		for(name in leg)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
+	if(khan.len > 0)
+		dat += "<tr><th colspan=3>Eighties</th></tr>"
+		for(name in khan)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
+	if(town.len > 0)
+		dat += "<tr><th colspan=3>Vault-Tek City Coalition</th></tr>"
+		for(name in town)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
+	if(waste.len > 0)
+		dat += "<tr><th colspan=3>Wasteland</th></tr>"
+		for(name in waste)
+			dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[misc[name]]</td><td>[isactive[name]]</td></tr>"
+			even = !even
 	dat += "</table>"
 	dat = replacetext(dat, "\n", "") // so it can be placed on paper correctly
 	dat = replacetext(dat, "\t", "")

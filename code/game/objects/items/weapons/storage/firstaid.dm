@@ -177,7 +177,7 @@
 	if (empty) return
 	new /obj/item/tool/bonesetter(src)
 	new /obj/item/tool/cautery(src)
-	new /obj/item/tool/saw/circular/advanced(src)
+	new /obj/item/tool/saw/chain(src)
 	new /obj/item/tool/hemostat(src)
 	new /obj/item/tool/retractor(src)
 	new /obj/item/tool/scalpel/advanced(src)

@@ -18,7 +18,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "ae" = (
@@ -67,7 +67,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "al" = (
@@ -116,7 +116,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "aq" = (
@@ -188,7 +188,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/pen,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -219,7 +219,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -260,7 +260,7 @@
 /obj/structure/window/reinforced{
 	dir = 6
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/remains/human,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -300,7 +300,7 @@
 /obj/structure/window/reinforced{
 	dir = 1
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/remains/human,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -349,7 +349,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/remains/human,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -366,7 +366,7 @@
 /obj/structure/window/reinforced{
 	dir = 8
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/item/lipstick/black,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
@@ -432,7 +432,7 @@
 /obj/structure/window/reinforced{
 	dir = 4
 	},
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /obj/structure/barricade,
 /obj/effect/decal/cleanable/blood/drip,
 /turf/simulated/floor/tiled/dark/brown_platform,

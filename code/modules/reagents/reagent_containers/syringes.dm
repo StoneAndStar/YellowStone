@@ -8,7 +8,7 @@
 /obj/item/reagent_containers/syringe
 	name = "syringe"
 	desc = "A syringe."
-	icon = 'icons/obj/syringe.dmi'
+	icon = 'icons/obj/medical/syringe.dmi'
 	item_state = "syringe"
 	icon_state = "0"
 	matter = list(MATERIAL_GLASS = 1, MATERIAL_STEEL = 1)
@@ -331,7 +331,7 @@
 /obj/item/reagent_containers/syringe/large
 	name = "large syringe"
 	desc = "A large syringe for those patients who needs a little more"
-	icon = 'icons/obj/large_syringe.dmi'
+	icon = 'icons/obj/medical/large_syringe.dmi'
 	item_state = "large_syringe"
 	icon_state = "0"
 	matter = list(MATERIAL_GLASS = 1, MATERIAL_STEEL = 1,MATERIAL_SILVER = 1)

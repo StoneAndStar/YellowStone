@@ -8,7 +8,7 @@
 /obj/item/reagent_containers/food/condiment
 	name = "Condiment Container"
 	desc = "Just your average condiment container."
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "emptycondiment"
 	reagent_flags = OPENCONTAINER
 	possible_transfer_amounts = list(1,5,10)
@@ -148,7 +148,7 @@
 /obj/item/reagent_containers/food/condiment/flour
 	name = "flour sack"
 	desc = "A big bag of flour. Good for baking!"
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "flour"
 	item_state = "flour"
 	preloaded_reagents = list("flour" = 30)

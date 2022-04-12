@@ -70,7 +70,7 @@
 /area/template_noop)
 "C" = (
 /obj/structure/bed,
-/obj/item/bedsheet/rainbow,
+,
 /obj/spawner/lowkeyrandom,
 /turf/simulated/floor/carpet,
 /area/template_noop)

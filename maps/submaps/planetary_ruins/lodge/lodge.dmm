@@ -88,7 +88,7 @@
 /turf/simulated/floor/wood,
 /area/map_template/lodge)
 "p" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	icon_state = "wooden_chair_preview";
 	dir = 8
 	},
@@ -173,7 +173,7 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/lodge)
 "D" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	icon_state = "wooden_chair_preview";
 	dir = 8
 	},

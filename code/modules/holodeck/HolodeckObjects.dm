@@ -95,8 +95,8 @@
 /obj/structure/holostool
 	name = "stool"
 	desc = "Apply butt."
-	icon = 'icons/obj/furniture.dmi'
-	icon_state = "stool_padded_preview"
+	icon = 'icons/obj/furniture/chairs_and_beds.dmi'
+	icon_state = "stool_old"
 	anchored = TRUE
 
 /obj/item/clothing/gloves/boxing/hologlove

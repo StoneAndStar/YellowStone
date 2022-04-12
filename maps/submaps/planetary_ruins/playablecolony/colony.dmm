@@ -1402,7 +1402,6 @@
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/engineering)
 "eb" = (
-/obj/structure/iv_drip,
 /obj/machinery/alarm{
 	locked = 0;
 	pixel_y = 20
@@ -1712,7 +1711,7 @@
 /obj/machinery/door/blast/shutters{
 	id = "colsen";
 	name = "Hard Storage Shutter";
-	
+
 	},
 /turf/simulated/floor/plating,
 /area/map_template/colony/command)
@@ -2632,7 +2631,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/railing/mapped{
 	dir = 1;
@@ -2647,12 +2646,12 @@
 	dir = 2;
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump_out_external";
-	
+
 	},
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/railing/mapped,
 /obj/effect/floor_decal/industrial/hatch/orange,
@@ -2848,7 +2847,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /turf/simulated/floor/exoplanet/concrete,
 /area/template_noop)
@@ -4216,7 +4215,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /turf/simulated/floor/exoplanet/concrete,
 /area/map_template/colony/mineralprocessing)
@@ -4295,7 +4294,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/machinery/conveyor_switch{
 	id = "colonymine"
@@ -4435,7 +4434,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/machinery/computer/mining,
 /obj/structure/table/steel_reinforced,
@@ -4554,7 +4553,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump";
 	power_rating = 25000;
-	
+
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/airlock)
@@ -4589,7 +4588,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump";
 	power_rating = 25000;
-	
+
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/airlock)
@@ -4815,7 +4814,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/simulated/floor/exoplanet/concrete,
@@ -4852,12 +4851,12 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -4976,7 +4975,7 @@
 	id = "colsen";
 	name = "Hard Equipment Storage";
 	pixel_y = 28;
-	
+
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -5064,7 +5063,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/machinery/recharge_station,
 /turf/simulated/floor/exoplanet/concrete,
@@ -5430,7 +5429,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump_out_internal";
 	power_rating = 25000;
-	
+
 	},
 /obj/item/device/radio/intercom{
 	dir = 4;
@@ -5494,7 +5493,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump";
 	power_rating = 25000;
-	
+
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/airlock)
@@ -5521,7 +5520,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump";
 	power_rating = 25000;
-	
+
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/airlock)
@@ -5672,7 +5671,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -5711,7 +5710,7 @@
 /obj/structure/railing/mapped{
 	dir = 4;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/cable{
 	d1 = 4;
@@ -5858,7 +5857,7 @@
 	frequency = 2222;
 	id_tag = "playablecolonymain_pump_out_internal";
 	power_rating = 25000;
-	
+
 	},
 /turf/simulated/floor/tiled/steel/techfloor,
 /area/map_template/colony/airlock)
@@ -5997,7 +5996,6 @@
 "qF" = (
 /obj/effect/submap_landmark/spawnpoint/colonist_spawn,
 /obj/structure/bed/padded,
-/obj/item/bedsheet/hop,
 /obj/machinery/light/small{
 	icon_state = "bulb1";
 	dir = 8
@@ -6104,7 +6102,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -6283,17 +6281,10 @@
 	dir = 1
 	},
 /obj/structure/closet,
-/obj/item/storage/backpack/sport/white,
-/obj/item/storage/backpack/sport/purple,
-/obj/item/storage/backpack/sport/green,
-/obj/item/storage/backpack/sport/blue,
-/obj/item/storage/backpack/sport/orange,
 /obj/item/storage/backpack/satchel/leather,
 /obj/item/storage/backpack/satchel/leather,
 /obj/item/storage/backpack/satchel/leather,
 /obj/item/storage/backpack/satchel/leather,
-/obj/item/storage/backpack/medical,
-/obj/item/storage/backpack/medical,
 /obj/item/storage/pouch/small_generic,
 /obj/item/storage/pouch/small_generic,
 /obj/item/storage/pouch/small_generic,
@@ -6511,8 +6502,8 @@
 /obj/item/shovel,
 /obj/item/storage/ore,
 /obj/item/storage/ore,
-/obj/item/storage/backpack/industrial,
-/obj/item/storage/backpack/industrial,
+/obj/item/storage/backpack/canvas,
+/obj/item/storage/backpack/canvas,
 /obj/machinery/door/window/northright,
 /obj/structure/window/reinforced{
 	dir = 8;
@@ -6652,7 +6643,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -6855,7 +6846,7 @@
 /obj/structure/railing/mapped{
 	dir = 8;
 	icon_state = "railing0-1";
-	
+
 	},
 /obj/structure/railing/mapped,
 /turf/simulated/floor/exoplanet/concrete,

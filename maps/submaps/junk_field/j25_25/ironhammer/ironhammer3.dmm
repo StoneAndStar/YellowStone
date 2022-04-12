@@ -50,14 +50,14 @@
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "ao" = (
-/obj/structure/bed/chair/office/light{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "ap" = (
 /obj/item/remains/human,
-/obj/structure/bed/chair/office/light{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/plating/under/airless,
@@ -82,7 +82,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "au" = (
-/obj/structure/bed/chair/office/light{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/plating/under/airless,
@@ -292,7 +292,7 @@
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "bn" = (
-/obj/structure/bed/chair/office/light,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/steel/bluecorner/airless,
 /area/template_noop)
 "bo" = (

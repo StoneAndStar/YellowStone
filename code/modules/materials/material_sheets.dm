@@ -374,3 +374,12 @@
 	item_state = "rcdammo"
 	default_type = MATERIAL_COMPRESSED
 	price_tag = 30
+
+/obj/item/stack/material/gunpowder
+	name = "gunpowder"
+	desc = "A chunk of compressed gunpowder into a tear like shape."
+	singular_name = "gunpowder"
+	icon = 'icons/fallput/obj/materials.dmi'
+	icon_state = "gunpowder"
+	default_type = MATERIAL_GUNPOWDER
+	price_tag = 12

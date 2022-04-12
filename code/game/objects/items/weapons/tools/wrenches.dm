@@ -13,9 +13,9 @@
 	rarity_value = 6
 
 /obj/item/tool/wrench/improvised
-	name = "sheet spanner"
+	name = "simple wrench"
 	desc = "A flat bit of metal with some usefully shaped holes cut into it. Would perform better than a regular wrench with some tool mods investment."
-	icon_state = "impro_wrench"
+	icon_state = "crude_wrench"
 	degradation = 4
 	force = WEAPON_FORCE_HARMLESS
 	tool_qualities = list(QUALITY_BOLT_TURNING = 20, QUALITY_HAMMERING = 5)
@@ -27,7 +27,7 @@
 /obj/item/tool/wrench/big_wrench
 	name = "big wrench"
 	desc = "If everything else failed - bring a bigger wrench."
-	icon_state = "big-wrench"
+	icon_state = "adv_wrench"
 	w_class = ITEM_SIZE_NORMAL
 	tool_qualities = list(QUALITY_BOLT_TURNING = 40,QUALITY_HAMMERING = 15)
 	matter = list(MATERIAL_STEEL = 4, MATERIAL_PLASTEEL = 1)

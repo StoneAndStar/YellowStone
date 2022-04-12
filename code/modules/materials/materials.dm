@@ -603,6 +603,13 @@ var/list/name_to_material
 	sheet_plural_name = "ingots"
 	hitsound = 'sound/weapons/smash.ogg'
 
+/material/gunpowder
+	name = MATERIAL_GUNPOWDER
+	stack_type = /obj/item/stack/material/gunpowder
+	icon_colour = "#141010"
+	sheet_singular_name = "ingot"
+	sheet_plural_name = "ingots"
+
 // Adminspawn only, do not let anyone get this.
 /material/voxalloy
 	name = "voxalloy"

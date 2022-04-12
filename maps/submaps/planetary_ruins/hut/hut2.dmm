@@ -35,7 +35,7 @@
 /area/template_noop)
 "h" = (
 /obj/structure/bed,
-/obj/item/bedsheet/rainbow,
+,
 /obj/effect/decal/cleanable/cobweb2,
 /turf/simulated/floor/carpet,
 /area/template_noop)

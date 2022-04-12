@@ -28,7 +28,7 @@
 // Hence using a blank icon.
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible
 	name = "plant"
-	icon = 'icons/obj/seeds.dmi'
+	icon = 'icons/obj/flora/seeds.dmi'
 	icon_state = "blank"
 
 /obj/machinery/portable_atmospherics/hydroponics/soil/invisible/New(var/newloc,var/datum/seed/newseed)

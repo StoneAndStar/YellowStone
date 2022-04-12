@@ -31,13 +31,13 @@
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/deepmaint)
 "i" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/deepmaint)
 "j" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/tiled/steel/gray_perforated,
@@ -63,7 +63,7 @@
 /turf/simulated/floor/tiled/steel/gray_platform,
 /area/deepmaint)
 "p" = (
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/tiled/steel/gray_perforated,
 /area/deepmaint)
 "q" = (

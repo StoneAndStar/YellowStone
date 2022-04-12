@@ -92,7 +92,7 @@
 
 /datum/craft_recipe/furniture/stool
 	name = "stool"
-	result = /obj/item/stool
+	result = /obj/structure/bed/chair/custom/barstool/stool
 	time = 30
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
@@ -102,7 +102,7 @@
 
 /datum/craft_recipe/furniture/barstool
 	name = "bar stool"
-	result = /obj/item/stool/custom/bar_special
+	result = /obj/structure/bed/chair/custom/barstool/ancient
 	time = 30
 	steps = list(
 		list(CRAFT_MATERIAL, 1, MATERIAL_STEEL),
@@ -129,7 +129,7 @@
 //Custom chairs
 /datum/craft_recipe/furniture/bar_chair
 	name = "bar chair"
-	result = /obj/structure/bed/chair/custom/bar_special
+	result = /obj/structure/bed/chair/custom/barstool
 	steps = list(
 		list(CRAFT_MATERIAL, 4, MATERIAL_STEEL),
 		list(CRAFT_MATERIAL, 2, MATERIAL_PLASTIC),
@@ -139,14 +139,10 @@
 // Office chairs
 /datum/craft_recipe/furniture/office_chair
 	name = "dark office chair"
-	result = /obj/structure/bed/chair/office/dark
+	result = /obj/structure/bed/chair/custom/office
 	steps = list(
 		list(CRAFT_MATERIAL, 5, MATERIAL_STEEL),
 	)
-
-/datum/craft_recipe/furniture/office_chair/light
-	name = "light office chair"
-	result = /obj/structure/bed/chair/office/light
 
 
 // Wheelchairs

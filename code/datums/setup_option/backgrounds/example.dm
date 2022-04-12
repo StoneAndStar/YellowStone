@@ -8,7 +8,7 @@
 	name = "Example"
 	desc = "Example background"
 	restricted_depts = MEDICAL | SCIENCE
-	restricted_jobs = list(/datum/job/captain)
+	restricted_jobs = list()
 	stat_modifiers = list(
 		STAT_ROB = 1,
 		STAT_TGH = 2,

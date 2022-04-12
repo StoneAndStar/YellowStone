@@ -137,7 +137,7 @@
 
 /obj/item/storage/bag/produce
 	name = "produce bag"
-	icon = 'icons/obj/hydroponics_machines.dmi'
+	icon = 'icons/obj/flora/hydroponics_machines.dmi'
 	icon_state = "plantbag"
 	max_storage_space = 100
 	max_w_class = ITEM_SIZE_NORMAL

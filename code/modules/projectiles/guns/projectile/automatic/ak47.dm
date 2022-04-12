@@ -219,14 +219,14 @@
 				caliber = CAL_SRIFLE
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .20 Caliber."))
 			else if(caliber == CAL_SRIFLE)
-				caliber = CAL_CLRIFLE
-				mag_well = MAG_WELL_IH
+				caliber = CAL_22
+				mag_well = MAG_WELL_RIFLE
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .25 Caseless."))
-			else if(caliber == CAL_CLRIFLE)
+			else if(caliber == CAL_22)
 				caliber = CAL_LRIFLE
 				mag_well = MAG_WELL_RIFLE
 				to_chat(user, SPAN_WARNING("You successfully rechamber \the [src] to .30 Caliber."))
-		else 
+		else
 			to_chat(user, SPAN_WARNING("You cannot rechamber a loaded firearm!"))
 			return
 	..()

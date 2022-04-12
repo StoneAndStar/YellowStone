@@ -42,6 +42,18 @@
 		/obj/item/stock_parts/console_screen = 1
 	)
 
+/obj/item/electronics/circuitboard/ammolathe
+	name = T_BOARD("ammo bench")
+	build_path = /obj/machinery/autolathe/ammo
+	board_type = "machine"
+	rarity_value = 5
+	origin_tech = list(TECH_ENGINEERING = 2, TECH_DATA = 2)
+	req_components = list(
+		/obj/item/stock_parts/matter_bin = 3,
+		/obj/item/stock_parts/manipulator = 1,
+		/obj/item/stock_parts/console_screen = 1
+	)
+
 /obj/item/electronics/circuitboard/protolathe
 	name = T_BOARD("protolathe")
 	build_path = /obj/machinery/autolathe/rnd/protolathe

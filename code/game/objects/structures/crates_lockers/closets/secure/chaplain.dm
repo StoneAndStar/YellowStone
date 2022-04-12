@@ -4,12 +4,6 @@
 	icon_state = "head_preacher"
 
 /obj/structure/closet/secure_closet/reinforced/chaplain/populate_contents()
-	if(prob(25))
-		new /obj/item/storage/backpack/neotheology(src)
-	else if(prob(25))
-		new /obj/item/storage/backpack/sport/neotheology(src)
-	else
-		new /obj/item/storage/backpack/satchel/neotheology(src)
 	new /obj/item/clothing/under/rank/preacher(src)
 	new /obj/item/clothing/under/rank/preacher(src)
 	new /obj/item/storage/belt/sheath(src)

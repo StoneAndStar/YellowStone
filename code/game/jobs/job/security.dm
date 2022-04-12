@@ -1,3 +1,4 @@
+/*
 /datum/job/ihc
 	title = "Ironhammer Commander"
 	flag = IHC
@@ -283,4 +284,4 @@
 	name = "Ironhammer Operative"
 	icon_state = "player-blue"
 	join_tag = /datum/job/ihoper
-
+*/

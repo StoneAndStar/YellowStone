@@ -243,7 +243,6 @@
 		/obj/item/gun/projectile/colt,
 		/obj/item/gun/projectile/avasarala,
 		/obj/item/gun/projectile/giskard,
-		/obj/item/gun/projectile/gyropistol,
 		/obj/item/gun/projectile/handmade_pistol,
 		/obj/item/gun/projectile/flare_gun,
 		/obj/item/gun/projectile/lamia,
@@ -263,7 +262,10 @@
 		/obj/item/gun/projectile/shotgun/pump/sawn,
 		/obj/item/gun/projectile/boltgun/obrez,
 		/obj/item/gun/energy/retro/sawn,
-		/obj/item/gun/projectile/automatic/luty
+		/obj/item/gun/projectile/automatic/luty,
+		/obj/item/gun/projectile/beretta,
+		/obj/item/gun/projectile/sig,
+		/obj/item/gun/projectile/browning
 		)
 
 	sliding_behavior = TRUE

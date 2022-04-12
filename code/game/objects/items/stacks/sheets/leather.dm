@@ -1,61 +1,41 @@
 /obj/item/stack/material/animalhide
 	bad_type = /obj/item/stack/material/animalhide
 
+/obj/item/stack/material/animalhide/cattle
+	name = "animal hide"
+	desc = "hide from an animal."
+	singular_name = "animal hide piece"
+	icon_state = "sheet-hide"
+
 /obj/item/stack/material/animalhide/human
 	name = "human skin"
 	desc = "The by-product of human farming."
 	singular_name = "human skin piece"
-	icon_state = "sheet-hide"
+	icon_state = "sheet-humhide"
 
-/obj/item/stack/material/animalhide/corgi
-	name = "corgi hide"
-	desc = "The by-product of corgi farming."
-	singular_name = "corgi hide piece"
-	icon_state = "sheet-corgi"
+/obj/item/stack/material/animalhide/gecko
+	name = "gecko hide"
+	desc = "Skin of a lizard."
+	singular_name = "gecko hide piece"
+	icon_state = "sheet-geckohide"
 
-/obj/item/stack/material/animalhide/cat
-	name = "cat hide"
-	desc = "The by-product of cat farming."
-	singular_name = "cat hide piece"
-	icon_state = "sheet-cat"
+/obj/item/stack/material/animalhide/gecko
+	name = "molerat hide"
+	desc = "Skin of a molerat."
+	singular_name = "molerat hide piece"
+	icon_state = "sheet-molerathide"
 
-/obj/item/stack/material/animalhide/monkey
-	name = "monkey hide"
-	desc = "The by-product of monkey farming."
-	singular_name = "monkey hide piece"
-	icon_state = "sheet-monkey"
+/obj/item/stack/material/animalhide/dog
+	name = "dog skin"
+	desc = "Skin of a dog."
+	singular_name = "dog skin piece"
+	icon_state = "sheet-doghide"
 
-/obj/item/stack/material/animalhide/lizard
-	name = "lizard skin"
-	desc = "Sssssss..."
-	singular_name = "lizard skin piece"
-	icon_state = "sheet-lizard"
-
-/obj/item/stack/material/animalhide/xeno
-	name = "alien hide"
-	desc = "The skin of a terrible creature."
-	singular_name = "alien hide piece"
-	icon_state = "sheet-xeno"
-
-//don't see anywhere else to put these, maybe together they could be used to make the xenos suit?
-/obj/item/stack/material/xenochitin
-	name = "alien chitin"
-	desc = "A piece of the hide of a terrible creature."
-	singular_name = "alien hide piece"
-	icon = 'icons/mob/alien.dmi'
-	icon_state = "chitin"
-
-/obj/item/xenos_claw
-	name = "alien claw"
-	desc = "The claw of a terrible creature."
-	icon = 'icons/mob/alien.dmi'
-	icon_state = "claw"
-
-/obj/item/weed_extract
-	name = "weed extract"
-	desc = "A piece of slimy, purplish weed."
-	icon = 'icons/mob/alien.dmi'
-	icon_state = "weed_extract"
+/obj/item/stack/material/animalhide/deathclaw
+	name = "deathclaw hide"
+	desc = "Skin of a deathclaw."
+	singular_name = "deathclaw hide piece"
+	icon_state = "sheet-deathclaw"
 
 /obj/item/stack/material/hairlesshide
 	name = "hairless hide"

@@ -1,7 +1,7 @@
 /obj/structure/closet/secure_closet
 	name = "secure locker"
 	desc = "It's a card-locked storage unit."
-	icon = 'icons/obj/closet.dmi'
+	icon = 'icons/obj/furniture/closet.dmi'
 	icon_state = "secure1"
 	density = TRUE
 	opened = FALSE
@@ -24,6 +24,6 @@
 	..()
 
 /obj/structure/closet/secure_closet/reinforced
-	icon = 'icons/obj/closet.dmi'
+	icon = 'icons/obj/furniture/closet.dmi'
 	icon_state = "hop"
 	icon_lock = "reinforced"

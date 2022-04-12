@@ -114,11 +114,6 @@
 			You heal a slight amount by smoking and recover sanity more quickly."
 	icon_state = "cigarette" // https://game-icons.net
 
-/datum/perk/oddity/nightcrawler
-	name = "Nightcrawler"
-	desc = "You are faster in the darkness."
-	icon_state = "night" // https://game-icons.net/1x1/lorc/night-sky.html
-
 /datum/perk/oddity/fast_fingers
 	name = "Fast Fingers"
 	desc = "Nothing is safe around your hands. You are a true kleptomaniac. \
@@ -145,7 +140,7 @@
 	name = "Balls of Plasteel"
 	desc = "Pain comes and goes. You have gotten used to it. \
 			Your paincrit tolerance is higher."
-	icon_state = "golem" // https://game-icons.net
+	icon_state = "shield" // https://game-icons.net
 
 /datum/perk/oddity/junkborn
 	name = "Junkborn"
@@ -156,7 +151,7 @@
 /datum/perk/oddity/ass_of_concrete
 	name = "Ass of Concrete"
 	desc = "Years of training your body made you a hulk of a person. No more pushing around. \
-			Nobody can move past you, even on help intent. You wont slip in gravity."
+			Nobody can move past you, even on help intent."
 	icon_state = "muscular" // https://game-icons.net
 
 /datum/perk/oddity/ass_of_concrete/assign(mob/living/carbon/human/H)
@@ -170,7 +165,7 @@
 	..()
 
 /datum/perk/oddity/toxic_revenger
-	name = "Toxic Revenger"
+	name = "Glowing One"
 	desc = "A heart of gold does not matter when blood is toxic. Those who breathe your air, share your fate. \
 			People around you receive toxin damage."
 	icon_state = "Hazmat" // https://game-icons.net
@@ -210,11 +205,6 @@
 	name = "Sure Step"
 	desc = " You are more likely to avoid traps."
 	icon_state = "mantrap"
-
-/datum/perk/oddity/market_prof
-	name = "Market Professional"
-	desc = "Just by looking at the item you can know how much it cost."
-	icon_state = "market_prof"
 
 /datum/perk/oddity/gunsmith
 	name = "Gunsmith"

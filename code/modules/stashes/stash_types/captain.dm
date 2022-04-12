@@ -20,7 +20,6 @@
 	/obj/item/clothing/head/caphat/formal = 65,
 	/obj/item/device/radio/headset/heads/captain = 40,
 	/obj/item/bedsheet/captain = 30,
-	/obj/item/storage/backpack/satchel/captain = 40,
 	/obj/item/clothing/mask/smokable/cigarette/cigar/havana = 15,
 	/obj/item/modular_computer/tablet/lease/preset/command = 25,
 	/obj/item/stamp/captain = 35,

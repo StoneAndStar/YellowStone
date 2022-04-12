@@ -23,7 +23,7 @@
 	anchored = TRUE
 	opacity = 0
 	density = FALSE
-	icon = 'icons/obj/hydroponics_growing.dmi'
+	icon = 'icons/obj/flora/hydroponics_growing.dmi'
 	icon_state = "bush4-1"
 	layer = 3
 	pass_flags = PASSTABLE
@@ -91,7 +91,7 @@
 		layer = LOW_OBJ_LAYER
 		max_growth = VINE_GROWTH_STAGES
 		growth_threshold = max_health/VINE_GROWTH_STAGES
-		icon = 'icons/obj/hydroponics_vines.dmi'
+		icon = 'icons/obj/flora/hydroponics_vines.dmi'
 		growth_type = 2 // Vines by default.
 		if(seed.type == /datum/seed/mushroom/maintshroom)
 			growth_type = 0 // this is maintshroom
@@ -228,7 +228,7 @@ var/list/global/cutoff_plant_icons = list()
 		var/icon/J = new(icon, "[icon_base]-[i]")
 
 		//We blend the blank icon with it with an offset that will chop 12 pixels off the bottom
-		J.Blend(new /icon('icons/obj/hydroponics_vines.dmi', "blank"),ICON_MULTIPLY, y=WALL_HUG_OFFSET-31)
+		J.Blend(new /icon('icons/obj/flora/hydroponics_vines.dmi', "blank"),ICON_MULTIPLY, y=WALL_HUG_OFFSET-31)
 
 		//Finally we'll insert this new icon into the container we made
 		I.Insert(J, "[icon_base]-[i]")

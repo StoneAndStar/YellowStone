@@ -14,6 +14,7 @@
 		/obj/item/stack/material/gold = "gold",
 		/obj/item/stack/material/silver = "silver",
 		/obj/item/stack/material/mhydrogen = "hydrogen",
+		/obj/item/stack/material/gunpowder = "gunpowder"
 	)
 
 /obj/machinery/reagentgrinder/MouseDrop_T(atom/movable/I, mob/user, src_location, over_location, src_control, over_control, params)

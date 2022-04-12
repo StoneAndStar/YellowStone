@@ -9,7 +9,7 @@
 	name = "Laurelin bonsai"
 	desc = "A small tree, gifted to the club by a previous patron. It subsists off of numerous alcohols, and produces fruits and vegetables in return."
 
-	icon = 'icons/obj/plants.dmi'
+	icon = 'icons/obj/flora/plants.dmi'
 	icon_state = "plant-21" //Placeholder until we can get a proper sprite for them.
 
 	volume = 100 //Average bottle volume

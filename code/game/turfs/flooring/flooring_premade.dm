@@ -87,10 +87,40 @@
 	initial_flooring = /decl/flooring/reinforced/circuit/green
 
 /turf/simulated/floor/wood
-	name = "wooden floor"
+	name = "floor beams"
 	icon = 'icons/turf/flooring/wood.dmi'
-	icon_state = "wood"
+	icon_state = "housebase"
 	initial_flooring = /decl/flooring/wood
+
+/turf/simulated/floor/wood/oak
+	name = "wooden floor"
+	icon_state = "wood"
+	initial_flooring = /decl/flooring/wood/oak
+
+/turf/simulated/floor/wood/old
+	name = "old wooden floor"
+	icon_state = "wood_old"
+	initial_flooring = /decl/flooring/wood/old
+
+/turf/simulated/floor/wood/maple
+	name = "maple floor"
+	icon_state = "maplefloor"
+	initial_flooring = /decl/flooring/wood/maple
+
+/turf/simulated/floor/wood/dark
+	name = "dark wood floor"
+	icon_state = "wood_dark"
+	initial_flooring = /decl/flooring/wood/dark
+
+/turf/simulated/floor/wood/hardwood
+	name = "hardwood floor"
+	icon_state = "hardwood"
+	initial_flooring = /decl/flooring/wood/hardwood
+
+/turf/simulated/floor/wood/hardwooddiagonal
+	name = "hardwood floor"
+	icon_state = "hardwood_diagonal"
+	initial_flooring = /decl/flooring/wood/hardwood/diagonal
 
 /turf/simulated/floor/wood/airless
 	oxygen = 0

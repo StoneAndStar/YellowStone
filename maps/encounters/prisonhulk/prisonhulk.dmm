@@ -608,7 +608,7 @@
 /turf/simulated/floor/tiled/steel,
 /area/outpost/prisonhulk)
 "Io" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	dir = 1
 	},
 /turf/simulated/floor/carpet,
@@ -801,7 +801,7 @@
 /turf/simulated/floor/wood,
 /area/outpost/prisonhulk/security)
 "RQ" = (
-/obj/structure/bed/chair/wood{
+/obj/structure/bed/chair/custom/wood{
 	dir = 1
 	},
 /turf/space,

@@ -15,7 +15,7 @@
  */
 
 /obj/item/storage/box/donut
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "donutbox"
 	name = "donut box"
 	max_storage_space = 12 //The amount of starting donuts multiplied by the donut item size to keep only exact space requirement met.
@@ -33,7 +33,7 @@
 	cut_overlays()
 	var/i = 0
 	for(var/obj/item/reagent_containers/food/snacks/donut/D in contents)
-		add_overlays(image('icons/obj/food.dmi', "[i][D.overlay_state]"))
+		add_overlays(image('icons/obj/food/food.dmi', "[i][D.overlay_state]"))
 		i++
 
 /obj/item/storage/box/donut/empty
@@ -44,7 +44,7 @@
  */
 
 /obj/item/storage/ration_pack
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "erp_closed"
 	name = "emergency ration pack"
 	desc = "Silvery plastic package, with the letters \"ERP\" pasted onto the front. Seems air tight, and vacuumed sealed. \
@@ -74,7 +74,7 @@
 	new /obj/item/material/kitchen/utensil/spoon/mre(src)
 
 /obj/item/storage/ration_pack/ihr
-	icon = 'icons/obj/food.dmi'
+	icon = 'icons/obj/food/food.dmi'
 	icon_state = "ihr_closed"
 	name = "ironhammer ration pack"
 	desc = "Silvery plastic package, with the letters \"IHR\" pasted onto the front. Seems air tight, and vacuumed sealed. \
@@ -115,4 +115,4 @@
 	new /obj/item/clothing/under/rank/clown(src)
 	new /obj/item/stamp/clown(src)
 	new /obj/item/bananapeel(src)
-	
+

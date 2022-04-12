@@ -50,7 +50,7 @@
 /turf/simulated/floor/tiled/dark/brown_perforated,
 /area/crawler)
 "m" = (
-/obj/structure/bed/chair/custom/onestar/red,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/dark/brown_platform,
 /area/crawler)
 "n" = (

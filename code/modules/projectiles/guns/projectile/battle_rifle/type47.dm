@@ -7,8 +7,8 @@
 	w_class = ITEM_SIZE_BULKY
 	ammo_mag = "ih_sol"
 	load_method = MAGAZINE
-	mag_well = MAG_WELL_IH
-	caliber = CAL_CLRIFLE
+	mag_well = MAG_WELL_RIFLE
+	caliber = CAL_22
 	magazine_type = /obj/item/ammo_magazine/ihclrifle
 	origin_tech = list(TECH_COMBAT = 4, TECH_MATERIAL = 2)
 	slot_flags = SLOT_BELT
@@ -17,7 +17,7 @@
 	recoil_buildup = 2
 	penetration_multiplier = 1.5
 	damage_multiplier = 1.5
-	one_hand_penalty = 10 
+	one_hand_penalty = 10
 	gun_tags = list(GUN_SILENCABLE)
 	gun_parts = list(/obj/item/part/gun = 2 ,/obj/item/stack/material/plasteel = 6)
 	init_firemodes = list(
@@ -35,7 +35,7 @@
 	if (ammo_magazine)
 		iconstring += "_mag"
 		itemstring += "_mag"
-	
+
 	if (silenced)
 		iconstring += "_s"
 		itemstring += "_s"

@@ -54,7 +54,7 @@
 /turf/simulated/floor/tiled/techmaint,
 /area/crawler)
 "m" = (
-/obj/structure/bed/chair/office/dark,
+/obj/structure/bed/chair/custom/office,
 /turf/simulated/floor/plating,
 /area/crawler)
 "n" = (

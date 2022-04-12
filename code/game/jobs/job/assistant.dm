@@ -1,3 +1,4 @@
+/*
 /datum/job/assistant
 	title = ASSISTANT_TITLE
 	flag = ASSISTANT
@@ -47,3 +48,4 @@ As an vagabond, you should strive to help out anyone you can. Or at least, anyon
 	..()
 	for(var/alt in subtypesof(/datum/job_flavor/assistant))
 		random_flavors += new alt
+*/

@@ -38,10 +38,7 @@
 	icon_state = "med"
 
 /obj/structure/closet/secure_closet/personal/doctor/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/medical(src)
-	else
-		new /obj/item/storage/backpack/satchel/medical(src)
+	new /obj/item/storage/backpack/satchel/medical(src)
 	new /obj/item/clothing/under/rank/medical/green(src)
 	new /obj/item/clothing/head/surgery/green(src)
 	new /obj/item/clothing/under/rank/medical(src)
@@ -65,10 +62,7 @@
 	icon_state = "med"
 
 /obj/structure/closet/secure_closet/personal/paramedic/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/medical(src)
-	else
-		new /obj/item/storage/backpack/satchel/medical(src)
+	new /obj/item/storage/backpack/satchel/medical(src)
 	new /obj/item/clothing/under/rank/medical/green(src)
 	new /obj/item/clothing/head/surgery/green(src)
 	new /obj/item/clothing/under/rank/paramedic(src)
@@ -93,10 +87,7 @@
 	icon_state = "cmo"
 
 /obj/structure/closet/secure_closet/reinforced/CMO/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/medical(src)
-	else
-		new /obj/item/storage/backpack/satchel(src)
+	new /obj/item/storage/backpack/satchel(src)
 	new /obj/item/clothing/suit/bio_suit(src)
 	new /obj/item/clothing/head/bio_hood(src)
 	new /obj/item/clothing/shoes/color/white(src)

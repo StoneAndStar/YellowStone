@@ -125,6 +125,57 @@ var/list/flooring_types
 /decl/flooring/proc/Entered(mob/living/M as mob)
 	return
 
+// Fallout Certified
+
+/decl/flooring/wasteland
+	name = "sand"
+	desc = "Coarse, gets everywhere."
+	icon = 'icons/turf/wasteland.dmi'
+	icon_base = "desertsmooth"
+	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
+	build_type = null
+
+/decl/flooring/wasteland/coarse
+	icon_base = "desertcoarse"
+
+/decl/flooring/wasteland/coarse2
+	icon_base = "desertcoarse2"
+
+/decl/flooring/wasteland/rough
+	icon_base = "desertrough"
+
+/decl/flooring/wasteland/cracked
+	icon_base = "desertcracked"
+
+/decl/flooring/gravel
+	name = "gravel"
+	desc = "Lots of stone pebbles."
+	icon = 'icons/turf/gravel.dmi'
+	icon_base = "gravel"
+	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
+	build_type = null
+
+/decl/flooring/gravel/alt
+	icon_base = "gravel_alt"
+
+/decl/flooring/gravel/desertmerge
+	icon_base = "desertmerge"
+
+/decl/flooring/gravel/dirtmerge
+	icon_base = "dirtmerge"
+
+/decl/flooring/gravel/path
+	icon_base = "path_dirt"
+
+/decl/flooring/gravel/intersection
+	icon_base = "path_dirt_intersection"
+
+/decl/flooring/gravel/end
+	icon_base = "path_dirt_end"
+
+
+// Other flooring
+
 /decl/flooring/grass
 	name = "grass"
 	desc = "Do they smoke grass out in space, Bowie? Or do they smoke AstroTurf?"
@@ -147,6 +198,10 @@ var/list/flooring_types
 	flags = TURF_REMOVE_SHOVEL | TURF_HIDES_THINGS
 	build_type = null //Todo: add bags of fertilised soil or something to create dirt floors
 	footstep_sound = "gravel"
+	resistance = RESISTANCE_TOUGH
+	health = 9999999
+
+
 
 /decl/flooring/asteroid
 	name = "coarse sand"
@@ -156,6 +211,7 @@ var/list/flooring_types
 	flags = TURF_REMOVE_SHOVEL | TURF_CAN_BURN | TURF_CAN_BREAK
 	build_type = null
 	footstep_sound = "asteroid"
+
 
 //=========PLATING==========\\
 
@@ -628,16 +684,45 @@ var/list/flooring_types
 
 /decl/flooring/wood
 	name = "wooden floor"
-	desc = "Polished redwood planks."
+	desc = "Polished oak planks."
 	footstep_sound = "wood"
 	icon = 'icons/turf/flooring/wood.dmi'
-	icon_base = "wood"
+	icon_base = "housebase"
 	has_damage_range = 6
 	damage_temperature = T0C+200
 	descriptor = "planks"
 	build_type = /obj/item/stack/tile/wood
 	smooth_nothing = TRUE
 	flags = TURF_CAN_BREAK | TURF_CAN_BURN | TURF_IS_FRAGILE | TURF_REMOVE_SCREWDRIVER | TURF_HIDES_THINGS
+	plating_type = /decl/flooring/wood
+
+/decl/flooring/wood/oak
+	name = "oak floor"
+	desc = "rough planks."
+	icon_base = "wood"
+
+/decl/flooring/wood/maple
+	name = "maple floor"
+	desc = "Rare Californian maple planks."
+	icon_base = "maplefloor"
+
+/decl/flooring/wood/old
+	name = "old floor"
+	desc = "Stained, faded oak planks."
+	icon_base = "wood_old"
+
+/decl/flooring/wood/dark
+	name = "dark wood floor"
+	desc = "Oiled oak planks."
+	icon_base = "wood_dark"
+
+/decl/flooring/wood/hardwood
+	name = "hardwood floor"
+	desc = "Tiled hardwood."
+	icon_base = "hardwood"
+
+/decl/flooring/wood/hardwood/diagonal
+	icon_base = "hardwood_diagonal"
 
 /decl/flooring/reinforced
 	name = "reinforced floor"
@@ -679,6 +764,14 @@ var/list/flooring_types
 	has_damage_range = 6
 	flags = TURF_ACID_IMMUNE | TURF_CAN_BREAK | TURF_HIDES_THINGS
 	can_paint = null
+
+/decl/flooring/road
+	name = "road"
+	desc = "A stretch of road."
+	icon = 'icons/turf/road.dmi'
+	icon_base = "outermiddle"
+	build_type = null
+	flags = TURF_ACID_IMMUNE | TURF_HIDES_THINGS
 
 //==========Derelict==============\\
 

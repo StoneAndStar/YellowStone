@@ -121,7 +121,7 @@
 /turf/simulated/floor/wood,
 /area/crawler)
 "B" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/wood,
@@ -135,13 +135,13 @@
 /turf/simulated/floor/carpet/bcarpet,
 /area/crawler)
 "D" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 8
 	},
 /turf/simulated/floor/carpet/bcarpet,
 /area/crawler)
 "E" = (
-/obj/structure/bed/chair/office/dark{
+/obj/structure/bed/chair/custom/office{
 	dir = 4
 	},
 /turf/simulated/floor/carpet/bcarpet,

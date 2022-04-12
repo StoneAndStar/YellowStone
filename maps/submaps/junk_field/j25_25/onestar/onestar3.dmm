@@ -50,7 +50,7 @@
 /turf/simulated/floor/tiled/derelict/white_small_edges/airless,
 /area/template_noop)
 "ao" = (
-/obj/structure/bed/chair/custom/onestar,
+/obj/structure/bed/chair/custom/barstool/tan,
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
 /area/template_noop)
 "ap" = (
@@ -97,7 +97,7 @@
 /turf/simulated/floor/tiled/derelict/white_red_edges/airless,
 /area/template_noop)
 "aB" = (
-/obj/structure/bed/chair/custom/onestar/red{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 1
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges/airless,
@@ -318,7 +318,7 @@
 /turf/simulated/floor/tiled/techmaint_cargo/airless,
 /area/template_noop)
 "bT" = (
-/obj/structure/bed/chair/custom/onestar{
+/obj/structure/bed/chair/custom/barstool/tan{
 	dir = 8
 	},
 /turf/simulated/floor/tiled/derelict/red_white_edges/airless,

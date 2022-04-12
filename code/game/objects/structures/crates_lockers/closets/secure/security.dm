@@ -4,8 +4,6 @@
 	icon_state = "cap"
 
 /obj/structure/closet/secure_closet/reinforced/captains/populate_contents()
-	new /obj/item/storage/backpack/captain(src)
-	new /obj/item/storage/backpack/satchel/captain(src)
 	new /obj/item/clothing/under/rank/captain(src)
 	new /obj/item/clothing/suit/storage/captain(src)
 	new /obj/item/clothing/suit/armor/vest(src)
@@ -53,11 +51,6 @@
 	icon_state = "hos"
 
 /obj/structure/closet/secure_closet/reinforced/hos/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/ironhammer(src)
-	else
-		new /obj/item/storage/backpack/sport/ironhammer(src)
-	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/clothing/head/beret/sec/navy/hos(src)
 	new /obj/item/clothing/head/HoS(src)
 	new /obj/item/clothing/mask/gas/ihs(src)
@@ -86,11 +79,6 @@
 	icon_state = "warden"
 
 /obj/structure/closet/secure_closet/warden/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/ironhammer(src)
-	else
-		new /obj/item/storage/backpack/sport/ironhammer(src)
-	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/clothing/under/rank/warden(src)
 	new /obj/item/clothing/head/beret/sec/navy/warden(src)
 	new /obj/item/device/radio/headset/headset_sec(src)
@@ -120,11 +108,6 @@
 	icon_state = "sec"
 
 /obj/structure/closet/secure_closet/personal/security/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/ironhammer(src)
-	else
-		new /obj/item/storage/backpack/sport/ironhammer(src)
-	new /obj/item/storage/backpack/satchel/ironhammer(src)
 	new /obj/item/device/radio/headset/headset_sec(src)
 	new /obj/item/storage/belt/tactical/ironhammer(src)
 	new /obj/item/clothing/suit/storage/vest/ironhammer(src)

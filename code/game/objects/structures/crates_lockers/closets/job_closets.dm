@@ -59,10 +59,6 @@
 	icon_door = "mixed"
 
 /obj/structure/closet/jcloset/populate_contents()
-	if(prob(50))
-		new /obj/item/storage/backpack/sport/purple(src)
-	else
-		new /obj/item/storage/backpack/satchel(src)
 	new /obj/item/clothing/under/rank/janitor(src)
 	new /obj/item/device/radio/headset/headset_service(src)
 	new /obj/item/clothing/gloves/thick(src)
@@ -87,12 +83,6 @@
 	icon_state = "custodian"
 
 /obj/structure/closet/custodial/populate_contents()
-	if(prob(25))
-		new /obj/item/storage/backpack/neotheology(src)
-	else if(prob(25))
-		new /obj/item/storage/backpack/sport/neotheology(src)
-	else
-		new /obj/item/storage/backpack/satchel/neotheology(src)
 	new /obj/item/clothing/under/rank/church(src)
 	new /obj/item/storage/belt/utility/neotheology(src)
 	new /obj/item/device/radio/headset/church(src)
@@ -127,12 +117,6 @@
 	icon_state = "acolyte"
 
 /obj/structure/closet/acolyte/populate_contents()
-	if(prob(25))
-		new /obj/item/storage/backpack/neotheology(src)
-	else if(prob(25))
-		new /obj/item/storage/backpack/sport/neotheology(src)
-	else
-		new /obj/item/storage/backpack/satchel/neotheology(src)
 	new /obj/item/clothing/under/rank/acolyte(src)
 	new /obj/item/clothing/suit/storage/neotheology_jacket(src)
 	new /obj/item/storage/belt/tactical/neotheology(src)

@@ -1253,7 +1253,6 @@
 					/obj/item/ammo_magazine/ammobox/shotgun/beanbags = 2,
 					/obj/item/ammo_magazine/ammobox/pistol/rubber = 4,
 					/obj/item/ammo_magazine/ammobox/magnum/rubber = 4,
-					/obj/item/ammo_magazine/ammobox/clrifle_small/rubber = 4,
 					/obj/item/device/hailer = 8,
 					/obj/item/taperoll/police = 8,
 					/obj/item/device/holowarrant = 8,

@@ -24,7 +24,7 @@
 	twohanded = TRUE
 	darkness_view = 7
 	see_invisible_gun = SEE_INVISIBLE_NOLIGHTING
-	var/extra_damage_mult_scoped = 0.2
+	extra_damage_mult_scoped = 0.2
 	gun_tags = list(GUN_AMR, GUN_SCOPE)
 	rarity_value = 90
 	no_internal_mag = TRUE

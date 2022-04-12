@@ -25,7 +25,7 @@
 	var/datum/stat_holder/S = owner.stats
 	var/light_grain_perks = list(
 		PERK_SURVIVOR, PERK_VAGABOND,  // Jobs
-		PERK_NIHILIST, PERK_LOWBORN,   // Fates
+		PERK_NIHILIST,				   // Fates
 		PERK_HOLY_LIGHT,               // Aura
 	)
 
