@@ -33,16 +33,16 @@ install:
       
 before_script:
   - chmod +x tools/ci/check_filedirs.sh
-  - chmod +x ./install-byond.sh
-  - ./install-byond.sh
+  - chmod +x tools/ci/install-byond.sh
+  - tools/ci/install-byond.sh
 
 after_success:
-  - chmod +x ./send-to-discord.sh
-  - ./send-to-discord.sh success $WEBHOOK_URL
+  - chmod +x tools/ci/send-to-discord.sh
+  - tools/ci/send-to-discord.sh success $WEBHOOK_URL
 
 after_failure:
-  - chmod +x ./send-to-discord.sh
-  - ./send-to-discord.sh failure $WEBHOOK_URL
+  - chmod +x tools/ci/send-to-discord.sh
+  - tools/ci/send-to-discord.sh failure $WEBHOOK_URL
 
 script:
   - tools/ci/check_filedirs.sh ${DM_BUILDFILE}
